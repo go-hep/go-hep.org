@@ -88,7 +88,10 @@ func redirectToHttps(w http.ResponseWriter, req *http.Request) {
 func goGetHandle(w http.ResponseWriter, r *http.Request) {
 	url := r.URL.Path
 	url = url[len("/x/"):]
-	repo := filepath.Dir(url)
+	repo := url
+	if strings.Contains(url, "/") {
+		repo = filepath.Dir(url)
+	}
 	fmt.Fprintf(w, goGetTemplate, repo)
 }
 
