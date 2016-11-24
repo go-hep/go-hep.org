@@ -1,0 +1,11 @@
+[Unit]
+Description=Go HEP web server
+Requires=network-online.target
+
+[Service]
+WorkingDirectory=/srv/go-hep.org
+ExecStart=/srv/go-hep.org/go-hep-serve
+
+[Install]
+WantedBy=multi-user.target
+

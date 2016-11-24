@@ -1,0 +1,86 @@
+#baseurl = "https://go-hep.org/"
+baseurl = "https://clrwebgohep.in2p3.fr/"
+languageCode = "en-us"
+title = "go-hep"
+copyright = "go-hep"
+
+license = "BSD"
+licenselink = "https://github.com/go-hep/license/blob/master/LICENSE.md"
+homepage = "https://go-hep.org"
+
+theme = "hugo-material-docs"
+
+tags = ["documentation", "sphinx"]
+
+disqusShortname = ""
+googleAnalytics = ""
+
+[params]
+	name = "go-hep"
+
+	description = "Writing HEP software with ease and Go"
+	twitter = "https://twitter.com/0xb1ns"
+	github = "https://github.com/go-hep"
+
+	github_user   = "go-hep"
+
+	custom_css = []
+	custom_js  = []
+
+	permalink = "#"
+	#highlightjs = "css/highlight.css"
+	favicon = "favicon.ico"
+	logo = "images/go-hep-logo.png"
+
+	# Syntax highlighting theme
+	highlight_css  = ""
+
+	[params.palette]
+    	primary = "black"
+    	accent  = "blue"
+
+    [params.font]
+    	text = "Ubuntu"
+    	code = "Ubuntu Mono"
+
+[author]
+	name = "The go-hep authors"
+
+[permalinks]
+	blog = "/:year/:month/:filename/"
+	code = "/:filename/"
+
+[taxonomies]
+	tag = "tags"
+	category = "categories"
+
+[[menu.main]]
+	name   = "Go HEP"
+	url    = "/"
+	weight = 0
+
+[[menu.main]]
+	name   = "Getting started"
+	url    = "getting-started/"
+	weight = 10
+
+[[menu.main]]
+	name   = "Documentation"
+	url    = "doc/"
+	weight = 20
+
+[[menu.main]]
+	name   = "License"
+	url    = "license/"
+	weight = 30
+
+[social]
+	twitter = "0xb1ns"
+	github  = "go-hep"
+	email   = "go-hep@googlegroups.com"
+
+[blackfriday]
+	smartypants	= true
+	fractions = true
+	smartDashes = true
+	plainIDAnchors = true
