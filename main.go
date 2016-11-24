@@ -92,7 +92,20 @@ func goGetHandle(w http.ResponseWriter, r *http.Request) {
 	if strings.Contains(url, "/") {
 		repo = filepath.Dir(url)
 	}
+	if !goGetPkg(repo) {
+		http.NotFound(w, r)
+		return
+	}
 	fmt.Fprintf(w, goGetTemplate, repo)
+}
+
+func goGetPkg(pkg string) bool {
+	for _, v := range pkgs {
+		if pkg == v {
+			return true
+		}
+	}
+	return false
 }
 
 const goGetTemplate = `<!DOCTYPE html>
