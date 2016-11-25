@@ -54,7 +54,7 @@ All `go-hep` code is released under a [BSD-3 license](https://go-hep.org/license
 ## Authors and Contributors
 
 ``go-hep`` was primarily written by Sebastien Binet ([@sbinet](https://github.com/sbinet)).
-The complete [CONTRIBUTORS](https://github.com/go-hep/license/blob/master/CONTRIBUTORS) and [AUTHORS](https://github.com/go-hep/license/blob/master/AUTHORS) list can be consulted on the dedicated [license](https://go-hep.org/license) repository.
+The complete [CONTRIBUTORS](https://github.com/go-hep/license/blob/master/CONTRIBUTORS) and [AUTHORS](https://github.com/go-hep/license/blob/master/AUTHORS) list can be consulted on the dedicated [license](https://github.com/go-hep/license) repository.
 
 ## Support or Contact
 

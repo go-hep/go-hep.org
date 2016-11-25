@@ -4,7 +4,7 @@ date = "2016-11-24T12:49:05+01:00"
 
 +++
 
-All `go-hep` code is released under a [BSD-3 license](https://go-hep.org/license).
+All `go-hep` code is released under a [BSD-3 license](https://github.com/go-hep/license).
 
 ```
 Copyright ©2013 The go-hep Authors. All rights reserved.
