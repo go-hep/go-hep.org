@@ -65,9 +65,19 @@ googleAnalytics = ""
 	weight = 10
 
 [[menu.main]]
+	name   = "Tutorials"
+	url    = "tutos/"
+	weight = 11
+
+[[menu.main]]
 	name   = "Documentation"
 	url    = "doc/"
 	weight = 20
+
+[[menu.main]]
+	name   = "Contributing"
+	url    = "contributing/"
+	weight = 30
 
 [[menu.main]]
 	name   = "License"
