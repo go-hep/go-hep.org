@@ -69,3 +69,7 @@ You can also contact us at [go-hep@googlegroups.com](mailto:go-hep@googlegroups.
 
 The main mailing list for `go-hep` is hosted on [googlegroups](https://groups.google.com/forum/#!forum/go-hep).
 You can subscribe to the forum without having a `GMail` account, by just sending a mail to [go-hep+subscribe@googlegroups.com](mailto:go-hep+subscribe@googlegroups.com?subject=subscribe) with `subscribe` as a subject.
+
+## About
+
+The `go-hep` logo was made by [Tom Ingebretsen](https://thenounproject.com/tomplusplus) from the [Noun Project](https://thenounproject.com).
