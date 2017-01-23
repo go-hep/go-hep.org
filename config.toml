@@ -1,5 +1,4 @@
-#baseurl = "https://go-hep.org/"
-baseurl = "https://clrwebgohep.in2p3.fr/"
+baseurl = "https://go-hep.org/"
 languageCode = "en-us"
 title = "go-hep"
 copyright = "go-hep"

@@ -43,7 +43,14 @@ var (
 
 func main() {
 	// redirect every http request to https
-	go http.ListenAndServe(":80", http.HandlerFunc(redirectToHttps))
+	go func() {
+		for {
+			err := http.ListenAndServe(":80", http.HandlerFunc(redirectToHttps))
+			if err != nil {
+				log.Printf("http error: %v\n", err)
+			}
+		}
+	}()
 
 	flag.Parse()
 
@@ -55,7 +62,7 @@ func main() {
 	m := autocert.Manager{
 		Prompt:     autocert.AcceptTOS,
 		Email:      "binet@cern.ch",
-		HostPolicy: autocert.HostWhitelist("clrwebgohep.in2p3.fr"),
+		HostPolicy: autocert.HostWhitelist("go-hep.org"),
 		Cache:      autocert.DirCache("cert-cache"),
 	}
 
