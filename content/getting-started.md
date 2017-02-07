@@ -34,7 +34,7 @@ $> go env
 `go-hep` packages are installable with the `go get` command:
 
 ```sh
-$> go get go-hep.org/x/fads
+$> go get go-hep.org/x/hep/fads
 ```
 
 This will:
@@ -49,8 +49,8 @@ By default, `go get` compiles the package for your operating system and architec
 But you can easily cross-compile for other operating systems and architectures:
 
 ```sh
-$> GOOS=linux   GOARCH=amd64 go get go-hep.org/x/fads
-$> GOOS=windows GOARCH=386   go get go-hep.org/x/fads
+$> GOOS=linux   GOARCH=amd64 go get go-hep.org/x/hep/fads
+$> GOOS=windows GOARCH=386   go get go-hep.org/x/hep/fads
 ```
 
 The list of supported operating systems and architectures is given by:
@@ -62,7 +62,7 @@ $> go tool dist list
 To install a package and all the packages or commands under it (and, of course, their dependencies), use the ellipsis `...`:
 
 ```sh
-$> go get go-hep.org/x/fads/...
+$> go get go-hep.org/x/hep/fads/...
 ```
 
 ## Updating Go-HEP
@@ -70,5 +70,5 @@ $> go get go-hep.org/x/fads/...
 To update your local install of `go-hep`, you would use again the `go get` command, with the `-u` switch:
 
 ```sh
-$> go get -u go-hep.org/x/fads
+$> go get -u go-hep.org/x/hep/fads
 ```

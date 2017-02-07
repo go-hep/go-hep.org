@@ -9,4 +9,4 @@ tags = ["sphinx", "documentation"]
 
 Like for all [Go](https://golang.org/) packages, `go-hep`'s documentation is served by [godoc.org](https://godoc.org/?q=go-hep.org).
 
-Each package's documentation, say `go-hep.org/x/hbook`, is served by [godoc.org](https://godoc.org) under [godoc.org/go-hep.org/x/hbook](https://godoc.org/go-hep.org/x/hbook).
+Each package's documentation, say `go-hep.org/x/hep/hbook`, is served by [godoc.org](https://godoc.org) under [godoc.org/go-hep.org/x/hep/hbook](https://godoc.org/go-hep.org/x/hep/hbook).

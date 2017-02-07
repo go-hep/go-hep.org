@@ -19,25 +19,29 @@ import (
 var (
 	dirFlag = flag.String("dir", "./public", "directory of files to serve")
 
-	pkgs = []string{
-		"croot", // cgo!
+	goHepPkgs = []string{
+		"brio",
 		"csvutil",
 		"fads",
 		"fastjet",
+		"fit",
 		"fmom",
 		"fwk",
 		"hbook",
-		"hplot",
-		"hepmc",
 		"hepevt",
+		"hepmc",
 		"heppdt",
+		"hplot",
 		"lhef",
 		"lhef2hepmc",
 		"pawgo",
 		"rio",
+		"rootio",
 		"sio",
 		"slha",
-		"rootio",
+	}
+	cgoPkgs = []string{
+		"croot",
 	}
 )
 
@@ -99,15 +103,19 @@ func goGetHandle(w http.ResponseWriter, r *http.Request) {
 	if strings.Contains(url, "/") {
 		repo = filepath.Dir(url)
 	}
-	if !goGetPkg(repo) {
+	switch {
+	case goGetHepPkg(repo):
+		fmt.Fprintf(w, goGetHepTemplate, repo)
+	case goGetCgoPkg(repo):
+		fmt.Fprintf(w, goGetCgoTemplate, repo)
+	default:
 		http.NotFound(w, r)
 		return
 	}
-	fmt.Fprintf(w, goGetTemplate, repo)
 }
 
-func goGetPkg(pkg string) bool {
-	for _, v := range pkgs {
+func goGetHepPkg(pkg string) bool {
+	for _, v := range goHepPkgs {
 		if pkg == v {
 			return true
 		}
@@ -115,16 +123,39 @@ func goGetPkg(pkg string) bool {
 	return false
 }
 
-const goGetTemplate = `<!DOCTYPE html>
+func goGetCgoPkg(pkg string) bool {
+	for _, v := range cgoPkgs {
+		if pkg == v {
+			return true
+		}
+	}
+	return false
+}
+
+const goGetHepTemplate = `<!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="go-import" content="go-hep.org/x/%[1]s git https://github.com/go-hep/%[1]s">
-  <meta name="go-source" content="go-hep.org/x/%[1]s https://github.com/go-hep https://github.com/go-hep/%[1]s/tree/master{/dir} https://github.com/go-hep/%[1]s/blob/master{/dir}/{file}#L{line}">
-  <meta http-equiv="refresh" content="0; url=https://godoc.org/go-hep.org/x/%[1]s">
+  <meta name="go-import" content="go-hep.org/x/hep/%[1]s git https://github.com/go-hep/%[1]s">
+  <meta name="go-source" content="go-hep.org/x/hep/%[1]s https://github.com/go-hep https://github.com/go-hep/%[1]s/tree/master{/dir} https://github.com/go-hep/%[1]s/blob/master{/dir}/{file}#L{line}">
+  <meta http-equiv="refresh" content="0; url=https://godoc.org/go-hep.org/x/hep/%[1]s">
 </head>
 <body>
-Nothing to see here; <a href="https://godoc.org/go-hep.org/x/%[1]s">move along</a>.
+Nothing to see here; <a href="https://godoc.org/go-hep.org/x/hep/%[1]s">move along</a>.
+</body>
+</html>
+`
+
+const goGetCgoTemplate = `<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="go-import" content="go-hep.org/x/cgo/%[1]s git https://github.com/go-hep/%[1]s">
+  <meta name="go-source" content="go-hep.org/x/cgo/%[1]s https://github.com/go-hep https://github.com/go-hep/%[1]s/tree/master{/dir} https://github.com/go-hep/%[1]s/blob/master{/dir}/{file}#L{line}">
+  <meta http-equiv="refresh" content="0; url=https://godoc.org/go-hep.org/x/cgo/%[1]s">
+</head>
+<body>
+Nothing to see here; <a href="https://godoc.org/go-hep.org/x/cgo/%[1]s">move along</a>.
 </body>
 </html>
 `
