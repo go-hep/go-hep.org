@@ -20,28 +20,28 @@ var (
 	dirFlag = flag.String("dir", "./public", "directory of files to serve")
 
 	goHepPkgs = []string{
-		"brio",
-		"csvutil",
-		"fads",
-		"fastjet",
-		"fit",
-		"fmom",
-		"fwk",
-		"hbook",
-		"hepevt",
-		"hepmc",
-		"heppdt",
-		"hplot",
-		"lhef",
-		"lhef2hepmc",
-		"pawgo",
-		"rio",
-		"rootio",
-		"sio",
-		"slha",
+		"hep/brio",
+		"hep/csvutil",
+		"hep/fads",
+		"hep/fastjet",
+		"hep/fit",
+		"hep/fmom",
+		"hep/fwk",
+		"hep/hbook",
+		"hep/hepevt",
+		"hep/hepmc",
+		"hep/heppdt",
+		"hep/hplot",
+		"hep/lhef",
+		"hep/lhef2hepmc",
+		"hep/pawgo",
+		"hep/rio",
+		"hep/rootio",
+		"hep/sio",
+		"hep/slha",
 	}
 	cgoPkgs = []string{
-		"croot",
+		"cgo/croot",
 	}
 )
 
@@ -100,13 +100,11 @@ func goGetHandle(w http.ResponseWriter, r *http.Request) {
 	url := r.URL.Path
 	url = url[len("/x/"):]
 	repo := url
-	if strings.Contains(url, "/") {
-		repo = filepath.Dir(url)
-	}
 	switch {
 	case goGetHepPkg(repo):
 		fmt.Fprintf(w, goGetHepTemplate, repo)
 	case goGetCgoPkg(repo):
+		repo = repo[len("/cgo/"):]
 		fmt.Fprintf(w, goGetCgoTemplate, repo)
 	default:
 		http.NotFound(w, r)
@@ -136,8 +134,8 @@ const goGetHepTemplate = `<!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8">
-  <meta name="go-import" content="go-hep.org/x/hep/%[1]s git https://github.com/go-hep/%[1]s">
-  <meta name="go-source" content="go-hep.org/x/hep/%[1]s https://github.com/go-hep https://github.com/go-hep/%[1]s/tree/master{/dir} https://github.com/go-hep/%[1]s/blob/master{/dir}/{file}#L{line}">
+  <meta name="go-import" content="go-hep.org/x/hep/%[1]s git https://github.com/go-hep/hep">
+  <meta name="go-source" content="go-hep.org/x/hep/%[1]s https://github.com/go-hep https://github.com/go-hep/hep/tree/master{/dir} https://github.com/go-hep/hep/blob/master{/dir}/{file}#L{line}">
   <meta http-equiv="refresh" content="0; url=https://godoc.org/go-hep.org/x/hep/%[1]s">
 </head>
 <body>
