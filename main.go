@@ -128,7 +128,7 @@ func goGetHandle(w http.ResponseWriter, r *http.Request) {
 
 func goGetHepPkg(pkg string) bool {
 	for _, v := range goHepPkgs {
-		if pkg == v {
+		if strings.HasPrefix(pkg, v) {
 			return true
 		}
 	}
