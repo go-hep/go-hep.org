@@ -34,6 +34,7 @@ func main() {
 	run("scp", "./go-hep-serve", server+":"+remoteDir+"/.")
 	srv.run("cd " + remoteDir + " && git pull")
 	srv.run("systemctl", "restart", service)
+	os.Remove("go-hep-serve")
 }
 
 func run(cmd string, args ...string) {
