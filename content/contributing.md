@@ -78,7 +78,7 @@ Fixes go-hep/hep#42.
 If the `CL` modifies multiple packages at the same time, include them in the commit message:
 
 ```
-hbook/rootcnv, rootio: implement conversion from rootio.TH1x to hbook.H1D
+hbook/rootcnv,rootio: implement conversion from rootio.TH1x to hbook.H1D
 
 This CL adds the ability to convert rootio.TH1{D,F,I} 1-dim histograms
 to hbook.H1D.
