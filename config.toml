@@ -61,12 +61,12 @@ googleAnalytics = ""
 [[menu.main]]
 	name   = "Getting started"
 	url    = "getting-started/"
-	weight = 10
+	weight = 11
 
 [[menu.main]]
 	name   = "Tutorials"
 	url    = "tutos/"
-	weight = 11
+	weight = 12
 
 [[menu.main]]
 	name   = "Documentation"
