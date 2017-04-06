@@ -31,9 +31,9 @@ Excerpted from the [Go conduct document](https://golang.org/conduct).
 
 When you encounter a bug, please open an issue on the corresponding repository.
 Start the issue title with the repository/sub-repository name, like `fwk/hbooksvc: issue name`.
-Be specific about the environment you encountered the bug in.
+Be specific about the environment you encountered the bug in (_e.g.:_ operating system, Go compiler version, ...).
 If you are able to write a test that reproduces the bug, please include it in the issue.
-As a rule we keep all tests OK.
+As a rule, we keep all tests OK and try to increase code coverage.
 
 ### Suggesting Enhancements
 
@@ -42,9 +42,9 @@ If it is large, such as suggesting a new repository, sub-repository, or interfac
 
 ### Your First Code Contribution
 
-If you are a new contributor, thank you!
-Before your first merge, you will need to be added to the [CONTRIBUTORS](https://github.com/go-hep/license/blob/master/CONTRIBUTORS) and [AUTHORS](https://github.com/go-hep/license/blob/master/AUTHORS) file.
-Open a pull request adding yourself to them.
+If you are a new contributor, *thank you!*
+Before your first merge, you will need to be added to the [CONTRIBUTORS](https://github.com/go-hep/license/blob/master/CONTRIBUTORS) and [AUTHORS](https://github.com/go-hep/license/blob/master/AUTHORS) files.
+Open a pull request adding yourself to these files.
 All `go-hep` code follows the BSD license in the [license document](https://github.com/go-hep/license/blob/master/LICENSE).
 We prefer that code contributions do not come with additional licensing.
 For exceptions, added code must also follow a BSD license.
@@ -58,6 +58,54 @@ You don't need to have tests, or even have code that compiles to open a pull req
 When tests use magic numbers, please include a comment explaining the source of the number.
 Benchmarks are optional for new features, but if you are submitting a pull request justified by performance improvement, you will need benchmarks to measure the impact of your change, and the pull request should include a report from [benchcmp](https://godoc.org/golang.org/x/tools/cmd/benchcmp) or, preferably, [benchstat](https://github.com/rsc/benchstat).
 
+Commit messages also follow some rules.
+They are best explained at the official [Go](https://golang.org) "Contributing guidelines" document:
+
+[golang.org/doc/contribute.html](https://golang.org/doc/contribute.html#commit_changes)
+
+For example:
+
+```
+fwk/hbooksvc: add support for booking S2D values
+
+This CL adds support for saving and reading `hbook.S2D` values.
+The existing implementation of the `hbooksvc` had only support
+for `hbook.H1D` and `hbook.H2D` values.
+
+Fixes go-hep/hep#42.
+```
+
+If the `CL` modifies multiple packages at the same time, include them in the commit message:
+
+```
+hbook/rootcnv, rootio: implement conversion from rootio.TH1x to hbook.H1D
+
+This CL adds the ability to convert rootio.TH1{D,F,I} 1-dim histograms
+to hbook.H1D.
+Note that ROOT::TH1x histograms do not provide enough informations to
+correctly (and completely) construct a hbook.H1D (missing sumwx and
+sumwx2 informations for the bins.)
+
+Fixes go-hep/hep#40.
+```
+
+Please always format your code with [goimports](https://godoc.org/golang.org/x/tools/cmd/goimports).
+Best is to have it invoked as a hook when you save your `.go` files.
+
+Files in the `go-hep` repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date.
+Instead, your name will appear in the change log and in the [CONTRIBUTORS](https://github.com/go-hep/license/blob/master/CONTRIBUTORS) and [AUTHORS](https://github.com/go-hep/license/blob/master/AUTHORS) files.
+
+New files that you contribute should use the standard copyright header:
+
+```
+// Copyright 2017 The go-hep Authors.  All rights reserved.
+// Use of this source code is governed by a BSD-style
+// license that can be found in the LICENSE file.
+```
+
+Files in the repository are copyright the year they are added.
+Do not update the copyright year on files that you change.
+
 ### Code Review
 
 If you are a contributor, please be welcoming to new contributors.
@@ -67,6 +115,7 @@ There are several terms code reviewers may use that you should become familiar w
 
   * ` LGTM ` — looks good to me
   * ` SGTM ` — sounds good to me
+  * ` CL ` — change list; a single commit in the repository
   * ` s/foo/bar/ ` — please replace ` foo ` with ` bar `; this is [sed syntax](http://en.wikipedia.org/wiki/Sed#Usage)
   * ` s/foo/bar/g ` — please replace ` foo ` with ` bar ` throughout your entire change
 
