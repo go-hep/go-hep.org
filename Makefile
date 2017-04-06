@@ -7,7 +7,7 @@ deploy: build
 	go run cmd_deploy.go
 
 serve:
-	hugo serve -w
+	hugo serve -w -p 8080
 
 clean:
 	/bin/rm -rf public
