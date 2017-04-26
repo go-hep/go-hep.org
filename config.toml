@@ -15,13 +15,11 @@ disqusShortname = ""
 googleAnalytics = ""
 
 [params]
-	name = "go-hep"
+	name = "Go-HEP"
 
 	description = "Writing HEP software with ease and Go"
-	twitter = "https://twitter.com/0xb1ns"
+	twitter = "https://twitter.com/go_hep"
 	github = "https://github.com/go-hep"
-
-	github_user   = "go-hep"
 
 	custom_css = []
 	custom_js  = []
@@ -89,7 +87,7 @@ googleAnalytics = ""
 	weight = 30
 
 [social]
-	twitter = "0xb1ns"
+	twitter = "go_hep"
 	github  = "go-hep"
 	email   = "go-hep@googlegroups.com"
 
