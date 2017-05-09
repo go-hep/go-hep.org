@@ -4,7 +4,7 @@ title = "Contributing"
 weight = 30
 +++
 
-The `go-hep` project eagerly accept contributions from the community.
+The `go-hep` projects eagerly accepts contributions from the community.
 
 ## Introduction
 
