@@ -12,7 +12,7 @@ tags = ["sphinx","documentation"]
 
 [![Build Status](https://secure.travis-ci.org/go-hep/hep.png)](http://travis-ci.org/go-hep/hep)
 [![GoDoc](https://godoc.org/go-hep.org/x/hep?status.svg)](https://godoc.org/go-hep.org/x/hep)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.574888.svg)](https://doi.org/10.5281/zenodo.574888)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.597940.svg)](https://doi.org/10.5281/zenodo.597940)
 
 [Go](https://golang.org) brings the fast edit-compile-run cycle that interpreted language users know and the runtime efficiency that compiled languages users expect.
 [go-hep](https://go-hep.org) provides the needed `HEP` oriented packages on top of this concurrency-enabled language.
