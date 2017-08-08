@@ -4,7 +4,7 @@ date = "2017-08-08T17:32:55+02:00"
 weight = 10
 +++
 
-Release `v0.4` is a small iteration (because of holidays.)
+Release [`v0.4`](https://github.com/go-hep/hep/tree/v0.4) is a small iteration (because of holidays.)
 
 But still, it does bring interesting things to the table:
 
@@ -22,5 +22,3 @@ But still, it does bring interesting things to the table:
 ## `lcio`
 
 - fix a bug in the marshaling of `lcio.TrackerRawData`, thanks [David Blyth](https://github.com/decibelCooper)
-
-
