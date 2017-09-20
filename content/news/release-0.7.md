@@ -4,6 +4,8 @@ date: 2017-09-20T14:12:20+02:00
 weight: 10
 ---
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.897927.svg)](https://doi.org/10.5281/zenodo.897927)
+
 Release [`v0.7`](https://github.com/go-hep/hep/tree/v0.7) is fresh from the oven with a few breaking API changes.
 
 ## cmd/yoda
