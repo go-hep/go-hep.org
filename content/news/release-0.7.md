@@ -52,6 +52,11 @@ p := hplot.New()
 h := hplot.NewH1D(h1d)
 ```
 
+And here are examples of the new default style:
+
+![correlations](/images/news/release-0.7/go-correlations.png)
+![results](/images/news/release-0.7/go-results.png)
+
 ## pawgo
 
 `pawgo` has been slightly updated to support plotting 2-dim histograms.
