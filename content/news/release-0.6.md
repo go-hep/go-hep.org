@@ -6,7 +6,7 @@ weight = 10
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.887895.svg)](https://doi.org/10.5281/zenodo.887895)
 
-Release `v0.6` is a small iteration (code-wise) but contains:
+Release [`v0.6`](https://github.com/go-hep/hep/tree/v0.6) is a small iteration (code-wise) but contains:
 
 - a software paper submitted to the Journal of OpenSource Software (JOSS): [![JOSS Paper](http://joss.theoj.org/papers/0b007c81073186f7c61f95ea26ad7971/status.svg)](http://joss.theoj.org/papers/0b007c81073186f7c61f95ea26ad7971)
 - a new `WIP` command, [rootio/cmd/root-dump](https://go-hep.org/x/hep/rootio/cmd/root-dump), to dump the content of ROOT files, including the entries of TTrees,
