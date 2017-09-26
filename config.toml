@@ -14,6 +14,12 @@ tags = ["documentation", "sphinx"]
 disqusShortname = ""
 googleAnalytics = ""
 
+# enable pygments (but use Chroma)
+pygmentsCodeFencesGuessSyntax = true
+pygmentsUseClasses = true
+pygmentsUseClassic = false
+pygmentsCodeFences = true
+
 [params]
 	name = "Go-HEP"
 
