@@ -75,6 +75,7 @@ func main() {
 	http.Handle("/", http.FileServer(http.Dir(dir)))
 	http.HandleFunc("/x/", goGetHandle)
 
+	go http.ListenAndServe(":http", m.HTTPHandler(nil))
 	srv := http.Server{
 		Addr:      ":https",
 		TLSConfig: &tls.Config{GetCertificate: m.GetCertificate},
