@@ -48,16 +48,6 @@ var (
 )
 
 func main() {
-	// redirect every http request to https
-	go func() {
-		for {
-			err := http.ListenAndServe(":80", http.HandlerFunc(redirectToHttps))
-			if err != nil {
-				log.Printf("http error: %v\n", err)
-			}
-		}
-	}()
-
 	flag.Parse()
 
 	dir, err := filepath.Abs(*dirFlag)
@@ -75,7 +65,7 @@ func main() {
 	http.Handle("/", http.FileServer(http.Dir(dir)))
 	http.HandleFunc("/x/", goGetHandle)
 
-	go http.ListenAndServe(":http", m.HTTPHandler(nil))
+	go http.ListenAndServe(":http", m.HTTPHandler(http.HandlerFunc(redirectToHttps)))
 	srv := http.Server{
 		Addr:      ":https",
 		TLSConfig: &tls.Config{GetCertificate: m.GetCertificate},
