@@ -47,7 +47,47 @@ by CSV:
 
 Example:
 
+    $> root-ls -t ./testdata/small-flat-tree.root
+    === [./testdata/small-flat-tree.root] ===
+    version: 60806
+    TTree          tree                 my tree title (entries=100)
+      Int32        "Int32/I"            TBranch
+      Int64        "Int64/L"            TBranch
+      UInt32       "UInt32/i"           TBranch
+      UInt64       "UInt64/l"           TBranch
+      Float32      "Float32/F"          TBranch
+      Float64      "Float64/D"          TBranch
+      Str          "Str/C"              TBranch
+      ArrayInt32   "ArrayInt32[10]/I"   TBranch
+      ArrayInt64   "ArrayInt64[10]/L"   TBranch
+      ArrayUInt32  "ArrayInt32[10]/i"   TBranch
+      ArrayUInt64  "ArrayInt64[10]/l"   TBranch
+      ArrayFloat32 "ArrayFloat32[10]/F" TBranch
+      ArrayFloat64 "ArrayFloat64[10]/D" TBranch
+      N            "N/I"                TBranch
+      SliceInt32   "SliceInt32[N]/I"    TBranch
+      SliceInt64   "SliceInt64[N]/L"    TBranch
+      SliceUInt32  "SliceInt32[N]/i"    TBranch
+      SliceUInt64  "SliceInt64[N]/l"    TBranch
+      SliceFloat32 "SliceFloat32[N]/F"  TBranch
+      SliceFloat64 "SliceFloat64[N]/D"  TBranch
+
     $> root2csv -o out.csv -t tree -f testdata/small-flat-tree.root
+    root2csv: scanning leaves...
+    root2csv: >>> "ArrayInt32" [10]int32 not supported
+    root2csv: >>> "ArrayInt64" [10]int64 not supported
+    root2csv: >>> "ArrayInt32" [10]int32 not supported
+    root2csv: >>> "ArrayInt64" [10]int64 not supported
+    root2csv: >>> "ArrayFloat32" [10]float32 not supported
+    root2csv: >>> "ArrayFloat64" [10]float64 not supported
+    root2csv: >>> "SliceInt32" []int32 not supported
+    root2csv: >>> "SliceInt64" []int64 not supported
+    root2csv: >>> "SliceInt32" []int32 not supported
+    root2csv: >>> "SliceInt64" []int64 not supported
+    root2csv: >>> "SliceFloat32" []float32 not supported
+    root2csv: >>> "SliceFloat64" []float64 not supported
+    root2csv: scanning leaves... [done]
+
     $> head out.csv
     ## Automatically generated from "testdata/small-flat-tree.root"
     Int32;Int64;UInt32;UInt64;Float32;Float64;Str;N
