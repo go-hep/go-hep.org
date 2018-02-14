@@ -12,6 +12,7 @@ import (
 	"net/http"
 	"path/filepath"
 	"strings"
+	"time"
 
 	"golang.org/x/crypto/acme/autocert"
 )
@@ -67,8 +68,12 @@ func main() {
 
 	go http.ListenAndServe(":http", m.HTTPHandler(http.HandlerFunc(redirectToHttps)))
 	srv := http.Server{
-		Addr:      ":https",
-		TLSConfig: &tls.Config{GetCertificate: m.GetCertificate},
+		Addr:           ":https",
+		TLSConfig:      &tls.Config{GetCertificate: m.GetCertificate},
+		ReadTimeout:    time.Second * 15,
+		WriteTimeout:   time.Second * 30,
+		IdleTimeout:    time.Minute * 5,
+		MaxHeaderBytes: 1 << 20,
 	}
 
 	err = srv.ListenAndServeTLS("", "")
