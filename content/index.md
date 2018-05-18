@@ -12,6 +12,7 @@ tags = ["sphinx","documentation"]
 
 [![Build Status](https://secure.travis-ci.org/go-hep/hep.png)](http://travis-ci.org/go-hep/hep)
 [![GoDoc](https://godoc.org/go-hep.org/x/hep?status.svg)](https://godoc.org/go-hep.org/x/hep)
+[![License](https://img.shields.io/badge/License-BSD--3-blue.svg)](https://go-hep.org/license)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.597940.svg)](https://doi.org/10.5281/zenodo.597940)
 [![JOSS Paper](/images/joss-badge.svg)](https://doi.org/10.21105/joss.00372)
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/go-hep/binder/master)
