@@ -1,3 +1,4 @@
+contentdir = "src"
 baseurl = "https://go-hep.org/"
 languageCode = "en-us"
 title = "go-hep"

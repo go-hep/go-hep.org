@@ -10,7 +10,7 @@ To add new content to the `news` section:
 git clone https://github.com/go-hep/go-hep.org
 cd go-hep.org
 hugo new "news/a-new-entry.md"
-$EDITOR ./content/news/a-new-entry.md
+$EDITOR ./src/news/a-new-entry.md
 ```
 
 ## Testing your changes
