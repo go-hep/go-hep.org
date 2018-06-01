@@ -8,7 +8,7 @@ weight: 10
 
 Release [`v0.12.0`](https://github.com/go-hep/hep/tree/v0.12.0) is fresh from the oven.
 
-This release is first one to introduce preliminary support for [vgo](https://research.swtch.com/vgo), the official [Go](https://golang.org) way to handle versioning.
+This release is the first one to introduce preliminary support for [vgo](https://research.swtch.com/vgo), the official [Go](https://golang.org) way to handle versioning.
 `vgo` is still in flux: the first Go version with experimental opt-in support should be `Go 1.11` (to be released in August 2018.)
 Obviously, on the Go-HEP side, adjustments will probably still be required as the user story solidifies and experience is accumulated.
 
