@@ -39,6 +39,7 @@ tags = ["sphinx","documentation"]
 - [go-hep.org/x/hep/rootio](https://go-hep.org/x/hep/rootio): a pure [Go](https://golang.org) package to for [ROOT](https://root.cern.ch) I/O (WIP) 
 - [go-hep.org/x/hep/sio](https://go-hep.org/x/hep/sio): basic, low-level, serial I/O used by `LCIO`
 - [go-hep.org/x/hep/slha](https://go-hep.org/x/hep/slha): `SUSY` Les Houches Accord I/O
+- [go-hep.org/x/hep/xrootd](https://go-hep.org/x/hep/xrootd): [XRootD](http://xrootd.org) client in pure [Go](https://golang.org)
 - [go-hep.org/x/cgo/croot](https://go-hep.org/x/cgo/croot): bindings to a subset of [ROOT](https://root.cern.ch) I/O
 
 ## Installation
