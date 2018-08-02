@@ -41,6 +41,7 @@ var (
 		"hep/rootio",
 		"hep/sio",
 		"hep/slha",
+		"hep/xrootd",
 	}
 	cgoPkgs = []string{
 		"cgo",
