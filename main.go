@@ -43,6 +43,10 @@ var (
 		"hep/slha",
 		"hep/xrootd",
 	}
+	expPkgs = []string{
+		"exp",
+		"exp/vgshiny",
+	}
 	cgoPkgs = []string{
 		"cgo",
 		"cgo/croot",
@@ -111,6 +115,10 @@ func goGetHandle(w http.ResponseWriter, r *http.Request) {
 		data.Repo = "hep"
 		goGetHepTemplate.Execute(w, data)
 		return
+	case goGetExpPkg(repo):
+		data.Repo = "exp"
+		goGetHepTemplate.Execute(w, data)
+		return
 	case goGetCgoPkg(repo):
 		repo = repo[len("cgo/"):]
 		data.Pkg = repo
@@ -132,6 +140,15 @@ func goGetHepPkg(pkg string) bool {
 	return false
 }
 
+func goGetExpPkg(pkg string) bool {
+	for _, v := range goExpPkgs {
+		if strings.HasPrefix(pkg, v) {
+			return true
+		}
+	}
+	return false
+}
+
 func goGetCgoPkg(pkg string) bool {
 	for _, v := range cgoPkgs {
 		if pkg == v {
@@ -142,6 +159,20 @@ func goGetCgoPkg(pkg string) bool {
 }
 
 var goGetHepTemplate = template.Must(template.New("x/hep").Parse(`<!DOCTYPE html>
+<html>
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+ <meta name="go-import" content="go-hep.org/x/{{.Repo}} git https://github.com/go-hep/{{.Repo}}"/>
+ <meta name="go-source" content="go-hep.org/x/{{.Repo}} https://github.com/go-hep/{{.Repo}}/ https://github.com/go-hep/{{.Repo}}/tree/master{/dir} https://github.com/go-hep/{{.Repo}}/blob/master{/dir}/{file}#L{line}"/>
+ <meta http-equiv="refresh" content="0; url=https://godoc.org/go-hep.org/x/{{.Pkg}}"/>
+</head>
+<body>
+Nothing to see here; <a href="https://godoc.org/go-hep.org/x/{{.Pkg}}">move along</a>.
+</body>
+</html>
+`))
+
+var goGetExpTemplate = template.Must(template.New("x/exp").Parse(`<!DOCTYPE html>
 <html>
 <head>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
