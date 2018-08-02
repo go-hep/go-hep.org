@@ -141,7 +141,7 @@ func goGetHepPkg(pkg string) bool {
 }
 
 func goGetExpPkg(pkg string) bool {
-	for _, v := range goExpPkgs {
+	for _, v := range expPkgs {
 		if strings.HasPrefix(pkg, v) {
 			return true
 		}
