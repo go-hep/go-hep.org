@@ -4,6 +4,8 @@ date: 2018-08-23T17:02:57+02:00
 weight: 10
 ---
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1402652.svg)](https://doi.org/10.5281/zenodo.1402652)
+
 Release [`v0.14.0`](https://github.com/go-hep/hep/tree/v0.14.0) is fresh from the oven.
 
 This release is the result of some massive work in the [xrootd](https://go-hep.org/x/hep/xrootd) package thanks to [Mikhail Ivchenko (a.k.a @EgorMatirov)](https://github.com/EgorMatirov), our [Google Summer of Code 2018](https://summerofcode.withgoogle.com/) student.
