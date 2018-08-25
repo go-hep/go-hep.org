@@ -152,7 +152,7 @@ Options:
 ## AOB
 
 Support for Go-1.6 and Go-1.7 has been dropped.
-Please upgrade to the latest and finest Go version (`1.11` is around the corner, with support for [Go modules](https://tip.golang.org/doc/go1.11#modules).)
+Please upgrade to the latest and finest Go version (`1.11` is around the corner, with support for [Go modules](https://golang.org/doc/go1.11#modules).)
 
 Another interesting possible development avenue: exposing ROOT `TTree`s as [Apache Arrow Arrays](https://arrow.apache.org/).
 This would allow for a better interoperability with that ecosystem and the tools it provides for data science and data analysis in general.
