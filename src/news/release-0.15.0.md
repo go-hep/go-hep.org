@@ -85,11 +85,11 @@ Usage: root-cp [options] file1.root [file2.root [...]] out.root
 ex:
  $> root-cp f.root out.root
  $> root-cp f1.root f2.root f3.root out.root
- $> root-cp f1.root:hist* f2.root:h2 out.root
+ $> root-cp f1.root:hist.* f2.root:h2 out.root
 
 options:
 
-$> root-cp ./testdata/graphs.root:g* out.root
+$> root-cp ./testdata/graphs.root:g.* out.root
 $> root-cp root://xrootd.example.org/file.root:hist.* out.root
 ```
 
