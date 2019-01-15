@@ -39,6 +39,12 @@ The [Go](https://golang.org) project maintains a wiki page that gathers a few re
 - The SoLid anti-neutrino detector's read-out system, N. Ryder
   - [doi/10.1109/NSSMIC.2016.8069730](https://doi.org/10.1109/NSSMIC.2016.8069730)
 
+### 2015
+
+- docker & HEP: Containerization of applications for development, distribution and preservation, S. Binet and B. Couturier
+  - [doi:10.1088 1742-6596/664/2/022007](https://doi.org/10.1088/1742-6596/664/2/022007)
+	- [pdf](http://iopscience.iop.org/article/10.1088/1742-6596/664/2/022007/pdf)
+
 ### 2012
 
 - Can Go address the multicore issues of today and the manycore problems of tomorrow? (S. Binet)
