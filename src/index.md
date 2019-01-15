@@ -7,7 +7,7 @@ tags = ["sphinx","documentation"]
 
 +++
 
-`go-hep` is a set of libraries and applications allowing High Energy Physicists to write efficient analysis code in the [Go](https://golang.org) programming language.
+`Go-HEP` is a set of libraries and applications allowing physicists from High Energy Physicis (HEP) to write efficient analysis code in the [Go](https://golang.org) programming language.
 
 
 [![Build Status](https://secure.travis-ci.org/go-hep/hep.png)](http://travis-ci.org/go-hep/hep)
@@ -20,9 +20,9 @@ tags = ["sphinx","documentation"]
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/go-hep/binder/master)
 
 [Go](https://golang.org) brings the fast edit-compile-run cycle that interpreted language users know and the runtime efficiency that compiled languages users expect.
-[go-hep](https://go-hep.org) provides the needed `HEP` oriented packages on top of this concurrency-enabled language.
+[Go-HEP](https://go-hep.org) provides the needed `HEP` oriented packages on top of this concurrency-enabled language.
  
-`go-hep` currently sports the following packages:
+`Go-HEP` currently sports the following packages:
 
 - [go-hep.org/x/hep/brio](https://go-hep.org/x/hep/brio): a toolkit to generate serialization code
 - [go-hep.org/x/hep/fads](https://go-hep.org/x/hep/fads): a fast detector simulation toolkit
@@ -44,9 +44,17 @@ tags = ["sphinx","documentation"]
 - [go-hep.org/x/hep/xrootd](https://go-hep.org/x/hep/xrootd): [XRootD](http://xrootd.org) client in pure [Go](https://golang.org)
 - [go-hep.org/x/cgo/croot](https://go-hep.org/x/cgo/croot): bindings to a subset of [ROOT](https://root.cern.ch) I/O
 
+## Motivation
+
+Writing analyses in HEP involves many steps and one needs a few tools to successfully carry out such an endeavour.
+But -- at minima -- one needs to be able to read (and possibly write) [ROOT](https://root.cern) files to be able to interoperate with the rest of the HEP community or to insert one's work into an already existing analysis pipeline.
+
+Go-HEP provides this necessary interoperability layer, in the [Go](https://golang.org) programming language.
+This allows physicists to leverage the great concurrency primitives of Go, together with the surrounding tooling and software engineering ecosystem of Go, to implement physics analyses.
+
 ## Installation
 
-`go-hep` packages are installable via the `go get` command:
+`Go-HEP` packages are installable via the `go get` command:
 
 ```sh
 $ go get go-hep.org/x/hep/fads
@@ -72,7 +80,7 @@ The complete [CONTRIBUTORS](https://github.com/go-hep/license/blob/master/CONTRI
 
 ## Support or Contact
 
-Having trouble with ``go-hep``?
+Having trouble with ``Go-HEP``?
  
 Check out the documentation:
 
