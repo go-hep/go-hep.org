@@ -89,6 +89,11 @@ pygmentsCodeFences = true
 	weight = 30
 
 [[menu.main]]
+	name   = "Users of Go-HEP"
+	url    = "users/"
+	weight = 30
+
+[[menu.main]]
 	name   = "License"
 	url    = "license/"
 	weight = 30
