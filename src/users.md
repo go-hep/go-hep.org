@@ -24,6 +24,7 @@ The [Go](https://golang.org) project maintains a wiki page that gathers a few re
 - Towards the ALICE Online-Offline (O2) control system, T. Mrnjavac for the ALICE collaboration
   - [indico](https://indico.cern.ch/event/587955/contributions/2935762/)
 - Exploring polyglot software frameworks in ALICE with FairMQ and fer, S. Binet for the ALICE collaboration
+  - [arXiv:1901.04834](https://arxiv.org/abs/1901.04834)
   - [indico](https://indico.cern.ch/event/587955/contributions/2938059/)
 
 ### 2017
@@ -63,6 +64,7 @@ The [Go](https://golang.org) project maintains a wiki page that gathers a few re
 ## Code
 
 - ALICE, for the O2 Control system: https://github.com/AliceO2Group/Control
+- ALICE, for the O2 framework: https://github.com/sbinet-alice/fer
 - ATLAS, TileCal HV analysis code: (private code)
 - AVIRM group, DAQ+Monitoring: https://gitlab.in2p3.fr/avirm/analysis-go
 - CMS, Data aggregation system: https://github.com/dmwm/das2go
