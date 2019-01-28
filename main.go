@@ -5,7 +5,6 @@
 package main
 
 import (
-	"crypto/tls"
 	"flag"
 	"html/template"
 	"log"
@@ -64,7 +63,7 @@ func main() {
 	m := autocert.Manager{
 		Prompt:     autocert.AcceptTOS,
 		Email:      "binet@cern.ch",
-		HostPolicy: autocert.HostWhitelist("go-hep.org"),
+		HostPolicy: autocert.HostWhitelist("go-hep.org", "www.go-hep.org"),
 		Cache:      autocert.DirCache("cert-cache"),
 	}
 
@@ -75,7 +74,7 @@ func main() {
 	srv := http.Server{
 		Addr:           ":https",
 		Handler:        m.HTTPHandler(mux),
-		TLSConfig:      &tls.Config{GetCertificate: m.GetCertificate},
+		TLSConfig:      m.TLSConfig(),
 		ReadTimeout:    time.Second * 15,
 		WriteTimeout:   time.Second * 30,
 		IdleTimeout:    time.Minute * 5,
