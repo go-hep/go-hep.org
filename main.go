@@ -68,12 +68,13 @@ func main() {
 		Cache:      autocert.DirCache("cert-cache"),
 	}
 
-	http.Handle("/", http.FileServer(http.Dir(dir)))
-	http.HandleFunc("/x/", goGetHandle)
+	mux := http.NewServeMux()
+	mux.Handle("/", http.FileServer(http.Dir(dir)))
+	mux.HandleFunc("/x/", goGetHandle)
 
-	go http.ListenAndServe(":http", m.HTTPHandler(http.HandlerFunc(redirectToHttps)))
 	srv := http.Server{
 		Addr:           ":https",
+		Handler:        m.HTTPHandler(mux),
 		TLSConfig:      &tls.Config{GetCertificate: m.GetCertificate},
 		ReadTimeout:    time.Second * 15,
 		WriteTimeout:   time.Second * 30,
