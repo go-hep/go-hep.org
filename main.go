@@ -71,6 +71,7 @@ func main() {
 	mux.Handle("/", http.FileServer(http.Dir(dir)))
 	mux.HandleFunc("/x/", goGetHandle)
 
+	go http.ListenAndServe(":http", m.HTTPHandler(http.HandlerFunc(redirectToHttps)))
 	srv := http.Server{
 		Addr:           ":https",
 		Handler:        m.HTTPHandler(mux),
