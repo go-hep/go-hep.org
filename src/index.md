@@ -10,6 +10,7 @@ tags = ["sphinx","documentation"]
 `Go-HEP` is a set of libraries and applications allowing physicists from High Energy Physicis (HEP) to write efficient analysis code in the [Go](https://golang.org) programming language.
 
 
+[![GitHub release](https://img.shields.io/github/release/go-hep/hep.svg)](https://github.com/go-hep/hep/releases)
 [![Build Status](https://secure.travis-ci.org/go-hep/hep.png)](http://travis-ci.org/go-hep/hep)
 [![appveyor](https://ci.appveyor.com/api/projects/status/qnnp26vv2c71f560?svg=true)](https://ci.appveyor.com/project/sbinet/hep)
 [![codecov](https://codecov.io/gh/go-hep/hep/branch/master/graph/badge.svg)](https://codecov.io/gh/go-hep/hep)
