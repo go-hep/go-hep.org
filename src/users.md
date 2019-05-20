@@ -21,6 +21,7 @@ The [Go](https://golang.org) project maintains a wiki page that gathers a few re
 
 - ProIO: An Event-Based I/O Stream Format for Protobuf Messages (D. Blyth, J. Alcaraz, S. Binet, S.V. Chekanov)
   - [arXiv:1812.03967](https://arxiv.org/abs/1812.03967)
+  - [doi:10.1016 j.cpc.2019.03.018](https://doi.org/10.1016/j.cpc.2019.03.018)
 - Towards the ALICE Online-Offline (O2) control system, T. Mrnjavac for the ALICE collaboration
   - [indico](https://indico.cern.ch/event/587955/contributions/2935762/)
 - Exploring polyglot software frameworks in ALICE with FairMQ and fer, S. Binet for the ALICE collaboration
