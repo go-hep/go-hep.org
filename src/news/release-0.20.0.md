@@ -1,6 +1,6 @@
 ---
 title: "Go HEP release 0.20.0"
-date: 2019-11-14T0:00:00+01:00
+date: 2019-11-13T17:00:00+01:00
 weight: 10
 ---
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.3540979.svg)](https://doi.org/10.5281/zenodo.3540979)
