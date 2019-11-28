@@ -18,7 +18,7 @@ This release contains a major new `groot` feature: the ability to *write* (simpl
 - `groot` supports more ROOT-4 files (as created by Geant4: `TH{1,2}x` and `TTree`)
 - fixed compilation on 32b systems
 - add [groot/rtree.WriterVarsFromStruct](https://godoc.org/go-hep.org/x/hep/groot/rtree#WriteVarsFromStruct) to generate a slice of `rtree.WriterVars` from a user-provided `struct` that can be then used to fill a tree
-- add `With{LZ4,LZMA,Zlib}` and `WithoutCompression` function to configure whether a tree should use compression (and what kind of compression, if any)
+- add `With{LZ4,LZMA,Zlib}` and `WithoutCompression` functions to configure whether a tree should use compression (and what kind of compression, if any)
 - add `WithBasketSize` to configure the basket size of trees/branches
 - add auto-flushing of branches' baskets
 
@@ -153,7 +153,7 @@ if err != nil {
 
 ## clean-up
 
-The whole GoHEP tree has been cleaned up to remove the use of [github.com/pkg/errors](https://godoc.org/github.com/pkg/errors) and use instead [x/xerrors](https//godoc.org/golang.org/x/xerrors).
+The whole GoHEP tree has been cleaned up to remove the use of [github.com/pkg/errors](https://godoc.org/github.com/pkg/errors) and use instead [x/xerrors](https://godoc.org/golang.org/x/xerrors).
 `x/xerrors` will be phased out (in favor of `fmt` from the stdlib) when Go-1.13 will be the oldest supported release.
 
 This is to gain nice error reports as documented in the [Go blog](https://blog.golang.org):
