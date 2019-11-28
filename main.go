@@ -17,7 +17,8 @@ import (
 )
 
 var (
-	dirFlag = flag.String("dir", "./public", "directory of files to serve")
+	dirFlag  = flag.String("dir", "./public", "directory of files to serve")
+	distFlag = flag.String("dist-dir", "./dist", "directory of distribution files to serve")
 
 	goHepPkgs = []string{
 		"hep",
@@ -60,6 +61,11 @@ func main() {
 		log.Fatal(err)
 	}
 
+	distDir, err := filepath.Abs(*distFlag)
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	m := autocert.Manager{
 		Prompt:     autocert.AcceptTOS,
 		Email:      "binet@cern.ch",
@@ -69,6 +75,7 @@ func main() {
 
 	mux := http.NewServeMux()
 	mux.Handle("/", http.FileServer(http.Dir(dir)))
+	mux.Handle("/dist/", http.StripPrefix("/dist/", http.FileServer(http.Dir(distDir))))
 	mux.HandleFunc("/x/", goGetHandle)
 
 	go http.ListenAndServe(":http", m.HTTPHandler(http.HandlerFunc(redirectToHttps)))

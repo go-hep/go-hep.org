@@ -70,6 +70,9 @@ Just select the package you are interested in and `go get` will take care of fet
 - `windows-{amd64,386,...}`
 - `freebsd-{amd64,386,...}`
 
+
+Binaries for `go-hep` are also available here: [go-hep.org/dist](/dist)
+
 ## License
 
 All `go-hep` code is released under a [BSD-3 license](https://go-hep.org/license).

@@ -84,6 +84,11 @@ pygmentsCodeFences = true
 	weight = 20
 
 [[menu.main]]
+	name   = "Downloads"
+	url    = "downloads/"
+	weight = 20
+
+[[menu.main]]
 	name   = "Contributing"
 	url    = "contributing/"
 	weight = 30
