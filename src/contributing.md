@@ -1,7 +1,7 @@
 +++
 date = "2016-11-25T09:11:34+01:00"
 title = "Contributing"
-weight = 30
+weight = 7
 +++
 
 The `go-hep` projects eagerly accepts contributions from the community.

@@ -1,13 +1,15 @@
 .PHONY: all build deploy clean
 
+HUGO ?= hugo
+
 build: clean
-	hugo
+	$(HUGO)
 
 deploy: build
 	go run cmd_deploy.go
 
 serve:
-	hugo serve -w -p 8080
+	$(HUGO) serve -w -p 8080
 
 clean:
 	/bin/rm -rf public

@@ -2,7 +2,7 @@
 date = "2016-11-24T09:19:32+01:00"
 title = "Welcome to Go-HEP"
 type = "index"
-weight = 0
+weight = 1
 tags = ["sphinx","documentation"]
 
 +++

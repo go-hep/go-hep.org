@@ -1,7 +1,7 @@
 +++
 title = "License"
 date = "2016-11-24T12:49:05+01:00"
-
+weight = 9
 +++
 
 All `go-hep` code is released under a [BSD-3 license](https://github.com/go-hep/license).

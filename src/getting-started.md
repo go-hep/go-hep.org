@@ -1,7 +1,7 @@
 +++
 date = "2016-11-24T14:09:34+01:00"
 title = "Getting started"
-weight = 11
+weight = 3
 tags = ["sphinx", "documentation"]
 +++
 

@@ -1,7 +1,7 @@
 ---
 date: 2019-01-15T12:32:03+01:00
 title: "Users of Go-HEP and Go in HENP"
-weight: 30
+weight: 8
 ---
 
 This page tries to gather users of [Go-HEP](https://go-hep.org), papers and talks about Go-HEP and/or uses of [Go](https://golang.org) in science and HENP in particular.
@@ -16,6 +16,11 @@ The [Go](https://golang.org) project maintains a wiki page that gathers a few re
 ## Papers and Talks
 
 ### 2019
+
+- Go-HEP: what can Go do for science?
+  - [talks:pdf](https://github.com/sbinet/talks/raw/master/2019/2019-10-22-golab-io-gohep/slides.pdf)
+	- [talk:video](https://www.youtube.com/watch?v=OOzMBZjLkH0&list=PLGN1AjiJJv0mHK60uQxVXjYg-G8d4YyqQ&index=3&t=0s)
+	- [conference:GoLabIO-2019](https://golab.io/agenda/session/98759)
 
 ### 2018
 

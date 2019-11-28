@@ -1,7 +1,7 @@
 +++
 date = "2016-11-25T09:11:42+01:00"
 title = "Tutorials"
-weight = 12
+weight = 4
 +++
 
 Tutorials are important.
