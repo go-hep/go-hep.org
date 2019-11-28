@@ -77,6 +77,7 @@ func main() {
 	mux.Handle("/", http.FileServer(http.Dir(dir)))
 	mux.Handle("/dist/", http.StripPrefix("/dist/", http.FileServer(http.Dir(distDir))))
 	mux.HandleFunc("/x/", goGetHandle)
+	mux.HandleFunc("/commit/", commitHandle)
 
 	go http.ListenAndServe(":http", m.HTTPHandler(http.HandlerFunc(redirectToHttps)))
 	srv := http.Server{
@@ -105,6 +106,16 @@ func redirectToHttps(w http.ResponseWriter, req *http.Request) {
 		"https://"+req.Host+req.URL.String(),
 		http.StatusMovedPermanently,
 	)
+}
+
+func commitHandle(w http.ResponseWriter, r *http.Request) {
+	url := r.URL.Path
+	sha := url[len("/commit/"):]
+	data := struct {
+		Commit string
+		Repo   string
+	}{sha, "hep"}
+	commitTemplate.Execute(w, data)
 }
 
 func goGetHandle(w http.ResponseWriter, r *http.Request) {
@@ -204,6 +215,18 @@ var goGetCgoTemplate = template.Must(template.New("x/cgo").Parse(`<!DOCTYPE html
 </head>
 <body>
 Nothing to see here; <a href="https://godoc.org/go-hep.org/x/cgo/{{.Pkg}}">move along</a>.
+</body>
+</html>
+`))
+
+var commitTemplate = template.Must(template.New("commit").Parse(`<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+  <meta http-equiv="refresh" content="0; url=https://github.com/go-hep/{{.Repo}}/commit/{{.Commit}}"/>
+</head>
+<body>
+Nothing to see here; <a href="https://github.com/go-hep/{{.Repo}}/commit/{{.Commit}}">move along</a>.
 </body>
 </html>
 `))
