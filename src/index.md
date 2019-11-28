@@ -75,7 +75,7 @@ Binaries for `go-hep` are also available here: [go-hep.org/dist](/dist)
 
 ## License
 
-All `go-hep` code is released under a [BSD-3 license](https://go-hep.org/license).
+All `go-hep` code is released under a [BSD-3 license](/license).
 
 ## Authors and Contributors
 
