@@ -20,7 +20,7 @@ tags = ["sphinx","documentation"]
 [![JOSS Paper](/images/joss-badge.svg)](https://doi.org/10.21105/joss.00372)
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/go-hep/binder/master)
 
-[Go](https://golang.org) brings the fast edit-compile-run cycle that interpreted language users know and the runtime efficiency that compiled languages users expect.
+[Go](https://golang.org) brings the fast edit-compile-run cycle that interpreted language users enjoy and the runtime efficiency that compiled languages users expect.
 [Go-HEP](https://go-hep.org) provides the needed `HEP` oriented packages on top of this concurrency-enabled language.
  
 `Go-HEP` currently sports the following packages:
@@ -48,7 +48,7 @@ tags = ["sphinx","documentation"]
 ## Motivation
 
 Writing analyses in HEP involves many steps and one needs a few tools to successfully carry out such an endeavour.
-But -- at minima -- one needs to be able to read (and possibly write) [ROOT](https://root.cern) files to be able to interoperate with the rest of the HEP community or to insert one's work into an already existing analysis pipeline.
+But -- at minima -- one needs to be able to read and write [ROOT](https://root.cern) files to be able to interoperate with the rest of the HEP community or to insert one's work into an already existing analysis pipeline.
 
 Go-HEP provides this necessary interoperability layer, in the [Go](https://golang.org) programming language.
 This allows physicists to leverage the great concurrency primitives of Go, together with the surrounding tooling and software engineering ecosystem of Go, to implement physics analyses.
