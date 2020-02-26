@@ -35,11 +35,6 @@ Be specific about the environment you encountered the bug in (_e.g.:_ operating 
 If you are able to write a test that reproduces the bug, please include it in the issue.
 As a rule, we keep all tests OK and try to increase code coverage.
 
-### Suggesting Enhancements
-
-If the scope of the enhancement is small, open an issue.
-If it is large, such as suggesting a new repository, sub-repository, or interface refactoring, then please start a discussion on [the go-hep list](https://groups.google.com/forum/#!forum/go-hep).
-
 ### Your First Code Contribution
 
 If you are a new contributor, *thank you!*
