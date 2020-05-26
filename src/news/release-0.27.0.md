@@ -275,4 +275,4 @@ The `Filter`, `Find`, `Map` and `Take` functions are available.
 
 That's all for today.
 Writing trees with structured data is still on the roadmark, together with (probably) some performance improvements on the writing side of things.
-
+Also, already in, is a feature similar to `TTreeFriends`: `rtree.Join(trees []rtree.Tree)`.
