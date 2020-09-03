@@ -25,7 +25,7 @@ const (
 func main() {
 
 	run("go", "generate")
-	run("go", "build", "-v", "-o", "go-hep-serve", ".")
+	run("go", "build", "-tags", "netgo", "-v", "-o", "go-hep-serve", ".")
 	run("hugo")
 	run("scp", "-r", "./public", server+":"+remoteDir+"/.")
 
