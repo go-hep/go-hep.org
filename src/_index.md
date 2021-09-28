@@ -93,6 +93,13 @@ Check out the documentation:
 - on [godoc.org](https://godoc.org/?q=go-hep.org),
 - or the [tutos](https://go-hep.org/tutos).
 
+There's also the forum:
+
+- [~sbinet/go-hep@lists.sr.ht](mailto:~sbinet/go-hep@lists.sr.ht) (by mail)
+- [lists.sr.ht/~sbinet/go-hep](https://lists.sr.ht/~sbinet/go-hep) (via the web interface),
+
+to discuss about `Go-HEP` or ask for help.
+
 ## About
 
 The `go-hep` logo was made by [Tom Ingebretsen](https://thenounproject.com/tomplusplus) from the [Noun Project](https://thenounproject.com).
