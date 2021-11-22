@@ -15,6 +15,17 @@ The [Go](https://golang.org) project maintains a wiki page that gathers a few re
 
 ## Papers and Talks
 
+### 2021
+
+- `groot`: reading `ROOT` data, with `Go`, faster than `ROOT` (plenay talk [@Journées Informatiques IN2P3/IRFU](https://indico.in2p3.fr/event/25008))
+  - [talk](https://talks.sbinet.org/2021/2021-11-16-ji-groot/talk.slide)
+
+### 2020
+
+- `ROOT-I/O` and `groot` (status report @LPC-Dev)
+  - [talk - part 1](https://talks.sbinet.org/2020/2020-06-15-lpc-dev-rootio/talk.slide)
+  - [talk - part 2](https://talks.sbinet.org/2020/2020-06-26-lpc-dev-groot/talk.slide)
+
 ### 2019
 
 - Go-HEP: what can Go do for science?
