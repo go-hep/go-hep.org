@@ -83,6 +83,7 @@ The [Go](https://golang.org) project maintains a wiki page that gathers a few re
 - ALICE, for the O2 Control system: https://github.com/AliceO2Group/Control
 - ALICE, for the O2 framework: https://github.com/sbinet-alice/fer
 - ATLAS, TileCal HV analysis code: (private code)
+- ATLAS, DAQ for the Front-end test board v2 (ATLAS-BNL): https://gitlab.cern.ch/BNL-ATLAS/larphase2/fetb2/gofetb2daq
 - AVIRM group, DAQ+Monitoring: https://gitlab.in2p3.fr/avirm/analysis-go
 - CMS, Data aggregation system: https://github.com/dmwm/das2go
 - LSST, slow control: https://github.com/go-lsst/fcs-lpc-motor-ctl
