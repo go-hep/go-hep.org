@@ -29,8 +29,8 @@ The [Go](https://golang.org) project maintains a wiki page that gathers a few re
 ### 2019
 
 - Go-HEP: what can Go do for science?
-  - [talks:pdf](https://github.com/sbinet/talks/raw/master/2019/2019-10-22-golab-io-gohep/slides.pdf)
-	- [talk:video](https://www.youtube.com/watch?v=OOzMBZjLkH0&list=PLGN1AjiJJv0mHK60uQxVXjYg-G8d4YyqQ&index=3&t=0s)
+  - [talks:pdf](https://github.com/sbinet/talks/raw/main/2019/2019-10-22-golab-io-gohep/slides.pdf)
+	- [talk:video](https://invidious.fdn.fr/watch?v=OOzMBZjLkH0&list=PLGN1AjiJJv0mHK60uQxVXjYg-G8d4YyqQ&index=3&t=0s)
 	- [conference:GoLabIO-2019](https://golab.io/agenda/session/98759)
 
 ### 2018
