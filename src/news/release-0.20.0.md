@@ -151,9 +151,9 @@ if err != nil {
 - [hplot.HLine](https://godoc.org/go-hep.org/x/hep/hplot#HLine) has been added to easily create a horitzontal line on a plot
 - [hplot.NewBand](https://godoc.org/go-hep.org/x/hep/hplot#NewBand) has been added to easily create a band between two sets of data points on a plot
 
-![vline-example](https://github.com/go-hep/hep/raw/master/hplot/testdata/vline_golden.png)
-![hline-example](https://github.com/go-hep/hep/raw/master/hplot/testdata/hline_golden.png)
-![band-example](https://github.com/go-hep/hep/raw/master/hplot/testdata/band_golden.png)
+![vline-example](https://github.com/go-hep/hep/raw/v0.20.0/hplot/testdata/vline_golden.png)
+![hline-example](https://github.com/go-hep/hep/raw/v0.20.0/hplot/testdata/hline_golden.png)
+![band-example](https://github.com/go-hep/hep/raw/v0.20.0/hplot/testdata/band_golden.png)
 
 ## AOB
 

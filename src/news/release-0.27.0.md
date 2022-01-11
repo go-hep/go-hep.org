@@ -245,8 +245,8 @@ options:
 Many improvement to `hplot` have been applied thanks again to the interesting suggestions from `@rmadar` (and his contributions.)
 Namely, a new plotter, `HStack` has been provided:
 
-![hstack-example](https://github.com/go-hep/hep/raw/master/hplot/testdata/hstack_golden.png)
-![hstack-band-example](https://github.com/go-hep/hep/raw/master/hplot/testdata/hstack_band_golden.png)
+![hstack-example](https://github.com/go-hep/hep/raw/v0.27.0/hplot/testdata/hstack_golden.png)
+![hstack-band-example](https://github.com/go-hep/hep/raw/v0.27.0/hplot/testdata/hstack_band_golden.png)
 
 A nice convenience tool to automatically generate (with `pdflatex` by default) `LaTeX` PDF plots from the `gonum.org/v1/plot/vg/vgtex` backend, has been also added to the new `hplot` concept of a `Figure`:
 
@@ -256,7 +256,7 @@ A nice convenience tool to automatically generate (with `pdflatex` by default) `
 
 Also, a new `RatioPlot` plotter has been added as well:
 
-![ratio-plot](https://github.com/go-hep/hep/raw/master/hplot/testdata/diff_plot_golden.png)
+![ratio-plot](https://github.com/go-hep/hep/raw/v0.27.0/hplot/testdata/diff_plot_golden.png)
 
 ## lhef
 

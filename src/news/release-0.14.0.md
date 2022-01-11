@@ -38,7 +38,7 @@ Next release should see explicit support for writing histograms and graphs.
 Lastly, improvements on the build and continuous integration procedure have been applied during this release cycle:
 
 - added [AppVeyor](https://ci.appveyor.com/project/sbinet/hep) CI, for Windows: [![appveyor](https://ci.appveyor.com/api/projects/status/qnnp26vv2c71f560?svg=true)](https://ci.appveyor.com/project/sbinet/hep)
-- added [code coverage](https://codecov.io/gh/go-hep/hep), with [codecov.io](https://codecov.io): [![codecov](https://codecov.io/gh/go-hep/hep/branch/master/graph/badge.svg)](https://codecov.io/gh/go-hep/hep)
+- added [code coverage](https://codecov.io/gh/go-hep/hep), with [codecov.io](https://codecov.io): [![codecov](https://codecov.io/gh/go-hep/hep/branch/v0.14.0/graph/badge.svg)](https://codecov.io/gh/go-hep/hep)
 
 ## Code coverage improvements
 

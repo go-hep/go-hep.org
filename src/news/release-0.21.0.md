@@ -149,7 +149,7 @@ if err != nil {
     log.Panic(err)
 }
 ```
-![functions-logy-example](https://github.com/go-hep/hep/raw/master/hplot/testdata/functions_logy_golden.png)
+![functions-logy-example](https://github.com/go-hep/hep/raw/v0.21.0/hplot/testdata/functions_logy_golden.png)
 
 ## clean-up
 

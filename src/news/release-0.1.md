@@ -49,7 +49,7 @@ This allowed to create a new command: [`fads-rivet-mc-generic`](https://godoc.or
 This command reproduces the default MonteCarlo analysis from [Rivet](https://rivet.hepforge.org): [MC_GENERIC.cc](https://rivet.hepforge.org/trac/browser/src/Analyses/MC_GENERIC.cc).
 It was nice to see the results were the same :) (except that `fads` was twice faster.)
 
-![](https://raw.githubusercontent.com/go-hep/hep/master/fit/testdata/h1d-gauss-plot.png)
+![](https://raw.githubusercontent.com/go-hep/hep/v0.1/fit/testdata/h1d-gauss-plot.png)
 
 ### Miscellaneous
 
