@@ -7,6 +7,7 @@ weight: 6
 Binaries for some platforms (Darwin, Freebsd, Linux, Windows) and architectures (386, amd64, arm64) are available here:
 
 - [/dist](/dist)
+  - [/dist/v0.30.0](/dist/v0.30.0)
   - [/dist/v0.29.1](/dist/v0.29.1)
   - [/dist/v0.28.5](/dist/v0.28.5)
   - [/dist/v0.27.0](/dist/v0.27.0)
