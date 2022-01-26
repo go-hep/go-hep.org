@@ -8,7 +8,7 @@ Binaries for some platforms (Darwin, Freebsd, Linux, Windows) and architectures 
 
 - [/dist](/dist)
   - [/dist/v0.30.0](/dist/v0.30.0)
-  - [/dist/v0.29.1](/dist/v0.29.1)
+  - [/dist/v0.29.2](/dist/v0.29.2)
   - [/dist/v0.28.5](/dist/v0.28.5)
   - [/dist/v0.27.0](/dist/v0.27.0)
   - [/dist/v0.23.0](/dist/v0.23.0)
