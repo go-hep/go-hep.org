@@ -1,12 +1,12 @@
 ---
-title: "Go HEP release 0.30.0"
+title: "Go HEP release 0.30.1"
 date: 2022-01-26T12:00:00+01:00
 weight: 10
 ---
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5905884.svg)](https://doi.org/10.5281/zenodo.5905884)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.5906744.svg)](https://doi.org/10.5281/zenodo.5906744)
 
-Release [`v0.30.0`](https://github.com/go-hep/hep/tree/v0.30.0) is out of the oven.
+Release [`v0.30.1`](https://github.com/go-hep/hep/tree/v0.30.1) is out of the oven.
 
 This release contains no major API breakage, but all around improvements and bug fixes.
 
@@ -19,6 +19,7 @@ This release contains no major API breakage, but all around improvements and bug
 - add support for `TBranchObject` and `TLeafObject`
 - add support for `TLorentzVector` (in `root-dump` and friends)
 - add support for `TNtuple` and `TNtupleD` (in `root-dump` and friends)
+- add support for empty slices in `root2npy`
 
 ## hplot
 
@@ -35,6 +36,7 @@ Next cycle will probably see some work on the `RNTuple` front.
 
 ## Changelog
 
+* [76e7c865](/commit/76e7c865) all: bump npyio@v0.6.0
 * [baa058b5](/commit/baa058b5) bump to ROOT-6.24/06
 * [bc000321](/commit/bc000321) all: bump peterh/liner, x/crypto, x/image, x/tools and ql
 * [b57330a1](/commit/b57330a1) groot/{rcmd,riofs,rtree,rvers}: add rtree.Reader support for TNtuple{,D}
