@@ -7,7 +7,7 @@ tags = ["sphinx","documentation"]
 
 +++
 
-`Go-HEP` is a set of libraries and applications allowing physicists from High Energy Physicis (HEP) to write efficient analysis code in the [Go](https://golang.org) programming language.
+`Go-HEP` is a set of libraries and applications allowing physicists from High Energy Physics (HEP) to write efficient analysis code in the [Go](https://golang.org) programming language.
 
 
 [![GitHub release](https://img.shields.io/github/release/go-hep/hep.svg)](https://github.com/go-hep/hep/releases)
