@@ -65,8 +65,8 @@ Help more than welcome: it's "just" a matter of creating examples and tests.
 As noted above, it is now possible to create ROOT files.
 The `rootio` package has a couple of examples:
 
-- [create an empty file](https://godoc.org/go-hep.org/x/hep/rootio#example-Create--Empty)
-- [create a file with a TObjString](https://godoc.org/go-hep.org/x/hep/rootio#example-Create)
+- [create an empty file](https://pkg.go.dev/go-hep.org/x/hep/rootio#example-Create--Empty)
+- [create a file with a TObjString](https://pkg.go.dev/go-hep.org/x/hep/rootio#example-Create)
 
 Here is how you would create a ROOT file with one `TObjString` in it:
 

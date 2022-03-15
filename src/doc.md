@@ -5,8 +5,8 @@ weight = 5
 tags = ["sphinx", "documentation"]
 +++
 
-[![GoDoc](https://godoc.org/go-hep.org?status.svg)](https://godoc.org/?q=go-hep.org)
+[![GoDoc](https://pkg.go.dev/go-hep.org?status.svg)](https://pkg.go.dev/?q=go-hep.org)
 
-Like for all [Go](https://golang.org/) packages, `go-hep`'s documentation is served by [godoc.org](https://godoc.org/?q=go-hep.org).
+Like for all [Go](https://golang.org/) packages, `go-hep`'s documentation is served by [pkg.go.dev](https://pkg.go.dev/?q=go-hep.org).
 
-Each package's documentation, say `go-hep.org/x/hep/hbook`, is served by [godoc.org](https://godoc.org) under [godoc.org/go-hep.org/x/hep/hbook](https://godoc.org/go-hep.org/x/hep/hbook).
+Each package's documentation, say `go-hep.org/x/hep/hbook`, is served by [pkg.go.dev](https://pkg.go.dev) under [pkg.go.dev/go-hep.org/x/hep/hbook](https://pkg.go.dev/go-hep.org/x/hep/hbook).

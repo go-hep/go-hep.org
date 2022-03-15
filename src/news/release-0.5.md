@@ -40,7 +40,7 @@ You need to tell the driver that the CSV file contains a header describing the c
 ## fit
 
 Initial support for automatically computing the Hessian matrix has been added.
-If the user does not provide a Hess function, Gonum's [diff/fd.Hessian](https://godoc.org/gonum.org/v1/gonum/diff/fd#Hessian) will be used
+If the user does not provide a Hess function, Gonum's [diff/fd.Hessian](https://pkg.go.dev/gonum.org/v1/gonum/diff/fd#Hessian) will be used
 
 ## fastjet
 

@@ -183,10 +183,10 @@ var goGetHepTemplate = template.Must(template.New("x/hep").Parse(`<!DOCTYPE html
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
  <meta name="go-import" content="go-hep.org/x/{{.Repo}} git https://github.com/go-hep/{{.Repo}}"/>
  <meta name="go-source" content="go-hep.org/x/{{.Repo}} https://github.com/go-hep/{{.Repo}}/ https://github.com/go-hep/{{.Repo}}/tree/main{/dir} https://github.com/go-hep/{{.Repo}}/blob/main{/dir}/{file}#L{line}"/>
- <meta http-equiv="refresh" content="0; url=https://godoc.org/go-hep.org/x/{{.Pkg}}"/>
+ <meta http-equiv="refresh" content="0; url=https://pkg.go.dev/go-hep.org/x/{{.Pkg}}"/>
 </head>
 <body>
-Nothing to see here; <a href="https://godoc.org/go-hep.org/x/{{.Pkg}}">move along</a>.
+Nothing to see here; <a href="https://pkg.go.dev/go-hep.org/x/{{.Pkg}}">move along</a>.
 </body>
 </html>
 `))
@@ -197,10 +197,10 @@ var goGetExpTemplate = template.Must(template.New("x/exp").Parse(`<!DOCTYPE html
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
  <meta name="go-import" content="go-hep.org/x/{{.Repo}} git https://github.com/go-hep/{{.Repo}}"/>
  <meta name="go-source" content="go-hep.org/x/{{.Repo}} https://github.com/go-hep/{{.Repo}}/ https://github.com/go-hep/{{.Repo}}/tree/main{/dir} https://github.com/go-hep/{{.Repo}}/blob/main{/dir}/{file}#L{line}"/>
- <meta http-equiv="refresh" content="0; url=https://godoc.org/go-hep.org/x/{{.Pkg}}"/>
+ <meta http-equiv="refresh" content="0; url=https://pkg.go.dev/go-hep.org/x/{{.Pkg}}"/>
 </head>
 <body>
-Nothing to see here; <a href="https://godoc.org/go-hep.org/x/{{.Pkg}}">move along</a>.
+Nothing to see here; <a href="https://pkg.go.dev/go-hep.org/x/{{.Pkg}}">move along</a>.
 </body>
 </html>
 `))
@@ -211,10 +211,10 @@ var goGetCgoTemplate = template.Must(template.New("x/cgo").Parse(`<!DOCTYPE html
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
   <meta name="go-import" content="go-hep.org/x/cgo/{{.Repo}} git https://github.com/go-hep/{{.Repo}}"/>
   <meta name="go-source" content="go-hep.org/x/cgo/{{.Repo}} https://github.com/go-hep/{{.Repo}}/ https://github.com/go-hep/{{.Repo}}/tree/main{/dir} https://github.com/go-hep/{{.Repo}}/blob/main{/dir}/{file}#L{line}"/>
-  <meta http-equiv="refresh" content="0; url=https://godoc.org/go-hep.org/x/cgo/{{.Pkg}}"/>
+  <meta http-equiv="refresh" content="0; url=https://pkg.go.dev/go-hep.org/x/cgo/{{.Pkg}}"/>
 </head>
 <body>
-Nothing to see here; <a href="https://godoc.org/go-hep.org/x/cgo/{{.Pkg}}">move along</a>.
+Nothing to see here; <a href="https://pkg.go.dev/go-hep.org/x/cgo/{{.Pkg}}">move along</a>.
 </body>
 </html>
 `))

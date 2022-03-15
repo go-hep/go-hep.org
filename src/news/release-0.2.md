@@ -20,7 +20,7 @@ New `fastjet` algorithms have been contributed by [Bastian Wieck](https://github
 
 `fastjet` is now also able to compute exclusive jets (thanks again [Bastian Wieck](https://github.com/Bastiantheone))
 
-A new [lcio](https://godoc.org/go-hep.org/x/hep/lcio) package, with initial read/write support for (most) of the [LCIO event data model](https://github.com/iLCSoft/LCIO), has been released:
+A new [lcio](https://pkg.go.dev/go-hep.org/x/hep/lcio) package, with initial read/write support for (most) of the [LCIO event data model](https://github.com/iLCSoft/LCIO), has been released:
 
 - `MCParticle`
 - `SimTrackerHit`
@@ -43,7 +43,7 @@ A new [lcio](https://godoc.org/go-hep.org/x/hep/lcio) package, with initial read
 - `LCGenericObject`
 - `LCRelation`
 
-See the [`lcio-ls`](https://go-hep.org/x/hep/lcio/cmd/lcio-ls) command and the [examples](https://godoc.org/go-hep.org/x/hep/lcio#pkg-examples) for more informations.
+See the [`lcio-ls`](https://go-hep.org/x/hep/lcio/cmd/lcio-ls) command and the [examples](https://pkg.go.dev/go-hep.org/x/hep/lcio#pkg-examples) for more informations.
 
 ## Next steps
 

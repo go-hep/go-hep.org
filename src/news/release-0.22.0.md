@@ -135,7 +135,7 @@ version: 61804
 - fix for correctly writing `[]int8` and `[]uint8` branch data
 - fix for correctly writing empty strings (subtle bug when the empty string was the first or the last to be written)
 - fix for correctly writing trees under (deeply) nested directories
-- [groot/rtree.Copy](https://godoc.org/go-hep.org/x/hep/groot/rtree#Copy) to easily copy trees from one place to another (possibly across files)
+- [groot/rtree.Copy](https://pkg.go.dev/go-hep.org/x/hep/groot/rtree#Copy) to easily copy trees from one place to another (possibly across files)
 - support for writing leaves with n-dim arrays (`n>=2`)
 
 The `root-print`, `root-cp` and `root-merge` commands have been improved to correctly handle (arbitrarily) nested directories.
@@ -148,8 +148,8 @@ While working on the `rcompress` package (that handles all compression/decompres
 
 `hbook` gained 2 new APIs:
 
-- [hbook.H1D#FillN](https://godoc.org/go-hep.org/x/hep/hbook#H1D.FillN) that fills a 1D-histogram with a slice of data and its associated weights
-- [hbook.H12D#FillN](https://godoc.org/go-hep.org/x/hep/hbook#H2D.FillN) that fills a 2D-histogram with a slice of data and its associated weights
+- [hbook.H1D#FillN](https://pkg.go.dev/go-hep.org/x/hep/hbook#H1D.FillN) that fills a 1D-histogram with a slice of data and its associated weights
+- [hbook.H12D#FillN](https://pkg.go.dev/go-hep.org/x/hep/hbook#H2D.FillN) that fills a 2D-histogram with a slice of data and its associated weights
 
 ## FUSE
 

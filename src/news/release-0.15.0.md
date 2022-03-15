@@ -35,9 +35,9 @@ Another big news for the `v0.15.0` release is the support for writing ROOT files
 To support writing `TH1x`, `TH2x` and `TGraphs`, `hbook` types have been modified to export most of their fields -- so one can create a `rootio.H1D` from a `hbook.H1D`.
 This enabled `hbook/rootcnv` to gain 3 new functions:
 
-- [rootcnv.FromH1D](https://godoc.org/go-hep.org/x/hep/hbook/rootcnv#FromH1D): a function that converts an `hbook.H1D` into a `rootio.H1D`, loosing a bit of informations along the way (ROOT isn't as precise as `hbook` or `YODA` are)
-- [rootcnv.FromH2D](https://godoc.org/go-hep.org/x/hep/hbook/rootcnv#FromH2D): a function that converts `hbook.H2D`s into `rootio.H2D`s,
-- [rootcnv.FromS2D](https://godoc.org/go-hep.org/x/hep/hbook/rootcnv#FromS2D): a function that converts `hbook.S2D` into `rootio.TGraphAsymmErrors`.
+- [rootcnv.FromH1D](https://pkg.go.dev/go-hep.org/x/hep/hbook/rootcnv#FromH1D): a function that converts an `hbook.H1D` into a `rootio.H1D`, loosing a bit of informations along the way (ROOT isn't as precise as `hbook` or `YODA` are)
+- [rootcnv.FromH2D](https://pkg.go.dev/go-hep.org/x/hep/hbook/rootcnv#FromH2D): a function that converts `hbook.H2D`s into `rootio.H2D`s,
+- [rootcnv.FromS2D](https://pkg.go.dev/go-hep.org/x/hep/hbook/rootcnv#FromS2D): a function that converts `hbook.S2D` into `rootio.TGraphAsymmErrors`.
 
 ## rootio & xrootd
 
@@ -95,10 +95,10 @@ $> root-cp root://xrootd.example.org/file.root:hist.* out.root
 
 More ROOT files writing examples can be found here:
 
-- [Histo1D](https://godoc.org/go-hep.org/x/hep/rootio#example-Create--Histo1D)
-- [Histo2D](https://godoc.org/go-hep.org/x/hep/rootio#example-Create--Histo2D)
-- [GraphAsymmErrors](https://godoc.org/go-hep.org/x/hep/rootio#example-Create--GraphAsymmErrors)
-- [Create WithZlib](https://godoc.org/go-hep.org/x/hep/rootio#example-Create--WithZlib)
+- [Histo1D](https://pkg.go.dev/go-hep.org/x/hep/rootio#example-Create--Histo1D)
+- [Histo2D](https://pkg.go.dev/go-hep.org/x/hep/rootio#example-Create--Histo2D)
+- [GraphAsymmErrors](https://pkg.go.dev/go-hep.org/x/hep/rootio#example-Create--GraphAsymmErrors)
+- [Create WithZlib](https://pkg.go.dev/go-hep.org/x/hep/rootio#example-Create--WithZlib)
 
 ## AOB
 

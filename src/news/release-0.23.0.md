@@ -58,7 +58,7 @@ Options:
 ```
 
 Also, many `root-xyz` commands have been refactored into a simple shim executable that calls into the new [groot/rcmd](https://go-hep.org/x/hep/groot/rcmd) so users (and `groot` tests) can more easily customize or re-use, say, `root-ls`, `root-dump`, ... through an API instead of spawning a sub-process.
-This refactor is especially useful for [rcmd.Merge](https://godoc.org/go-hep.org/x/hep/groot/rcmd#Merge), where users can register their own `merge` strategy for their own types (by implementing the [root.Merger](https://godoc.org/go-hep.org/x/hep/groot/root#Merger) interface.)
+This refactor is especially useful for [rcmd.Merge](https://pkg.go.dev/go-hep.org/x/hep/groot/rcmd#Merge), where users can register their own `merge` strategy for their own types (by implementing the [root.Merger](https://pkg.go.dev/go-hep.org/x/hep/groot/root#Merger) interface.)
 
 `groot/rtree` can now correctly read multi-leaves branches.
 

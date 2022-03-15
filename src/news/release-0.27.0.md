@@ -54,8 +54,8 @@ This command should be useful in the connection with [Key4HEP](https://github.co
 
 `fit` gained the ability to fit multivariate functions, thanks to [@JCCPort (Josh Porter)](https://github.com/JCCPort):
 
-- https://godoc.org/go-hep.org/x/hep/fit#example-CurveND--Plane
-- https://godoc.org/go-hep.org/x/hep/fit#CurveND
+- https://pkg.go.dev/go-hep.org/x/hep/fit#example-CurveND--Plane
+- https://pkg.go.dev/go-hep.org/x/hep/fit#CurveND
 
 
 ## fmom
@@ -69,7 +69,7 @@ This command should be useful in the connection with [Key4HEP](https://github.co
 
 `groot/rtree` gained a new type [rtree.Reader](https://go-hep.org/x/hep/groot/rtree#Reader), that allows to more easily (and faster) read data from a tree
 
-- https://godoc.org/go-hep.org/x/hep/groot/rtree#example-Reader
+- https://pkg.go.dev/go-hep.org/x/hep/groot/rtree#example-Reader
 
 ```go
 func ExampleReader() {
@@ -128,8 +128,8 @@ When `ROOT7` is out (or when `ROOT::RNtuple` is more stable), this package is ex
 
 The `rtree.Reader` type has also gained the ability to declare and evaluate user provided functions, taking a list of leaf names and the function to evaluate on the tree data:
 
-- https://godoc.org/go-hep.org/x/hep/groot/rtree#example-Reader--WithFormulaFunc
-- https://godoc.org/go-hep.org/x/hep/groot/rtree#example-Reader--WithFormulaFromUser
+- https://pkg.go.dev/go-hep.org/x/hep/groot/rtree#example-Reader--WithFormulaFunc
+- https://pkg.go.dev/go-hep.org/x/hep/groot/rtree#example-Reader--WithFormulaFromUser
 
 ```go
 func ExampleReader_withFormulaFunc() {
@@ -206,7 +206,7 @@ func ExampleReader_withFormulaFunc() {
 
 `groot` also gained a new command: `root-split`.
 
-- https://godoc.org/go-hep.org/x/hep/groot/cmd/root-split
+- https://pkg.go.dev/go-hep.org/x/hep/groot/cmd/root-split
 
 ```
 $> root-split -h
@@ -233,9 +233,9 @@ options:
 
 `H1D` can now be subtracted, added, added and scaled (thanks `@rmadar`)
 
-- https://godoc.org/go-hep.org/x/hep/hbook#AddH1D
-- https://godoc.org/go-hep.org/x/hep/hbook#AddScaledH1D
-- https://godoc.org/go-hep.org/x/hep/hbook#SubH1D
+- https://pkg.go.dev/go-hep.org/x/hep/hbook#AddH1D
+- https://pkg.go.dev/go-hep.org/x/hep/hbook#AddScaledH1D
+- https://pkg.go.dev/go-hep.org/x/hep/hbook#SubH1D
 
 `hbook/yodacnv` now supports [YODA](https://yoda.hepforge.org) format version 2 (and its YAML-based metadata description.)
 
@@ -250,9 +250,9 @@ Namely, a new plotter, `HStack` has been provided:
 
 A nice convenience tool to automatically generate (with `pdflatex` by default) `LaTeX` PDF plots from the `gonum.org/v1/plot/vg/vgtex` backend, has been also added to the new `hplot` concept of a `Figure`:
 
-- https://godoc.org/go-hep.org/x/hep/hplot#Fig
-- https://godoc.org/go-hep.org/x/hep/hplot#Figure
-- https://godoc.org/go-hep.org/x/hep/hplot/htex#Handler
+- https://pkg.go.dev/go-hep.org/x/hep/hplot#Fig
+- https://pkg.go.dev/go-hep.org/x/hep/hplot#Figure
+- https://pkg.go.dev/go-hep.org/x/hep/hplot/htex#Handler
 
 Also, a new `RatioPlot` plotter has been added as well:
 
@@ -267,7 +267,7 @@ Also, a new `RatioPlot` plotter has been added as well:
 
 `sliceop/f64s` is a new package to apply some "map-reduce"-esque concepts and operations to slices of `float64` values.
 
-- https://godoc.org/go-hep.org/x/hep/sliceop/f64s
+- https://pkg.go.dev/go-hep.org/x/hep/sliceop/f64s
 
 The `Filter`, `Find`, `Map` and `Take` functions are available.
 

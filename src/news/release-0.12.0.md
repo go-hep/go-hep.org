@@ -17,7 +17,7 @@ Nonetheless, it is still an interesting new development!
 ## geo/gdml
 
 This release adds preliminary support for parsing [Geometry Description Markup Language (GDML)](http://cern.ch/gdml) files, a _de facto_ standard for describing (detector) geometries.
-The documentation for this new package is here: [geo/gdml](https://godoc.org/go-hep.org/x/hep/geo/gdml).
+The documentation for this new package is here: [geo/gdml](https://pkg.go.dev/go-hep.org/x/hep/geo/gdml).
 
 Help wanted and (gladly) accepted to get this package in a shape where it could be used for detailed detector studies!
 This is tracked here:
@@ -26,16 +26,16 @@ This is tracked here:
 
 ## hplot
 
-`hplot` was slightly updated to cope with an interesting development percolating from upstream [gonum/plot](https://godoc.org/gonum.org/v1/plot), namely: the migration to a new PDF backend that allows to embed fonts inside the output PDF file.
+`hplot` was slightly updated to cope with an interesting development percolating from upstream [gonum/plot](https://pkg.go.dev/gonum.org/v1/plot), namely: the migration to a new PDF backend that allows to embed fonts inside the output PDF file.
 No more PDFs that display weirdly on foreign computer. Yay!
 
 This obviously means the resulting PDF files may be quite larger than with previous versions.
 (You can't have your cake and eat it.)
-You can use [vgpdf.Canvas.EmbedFonts](https://godoc.org/gonum.org/v1/plot/vg/vgpdf#Canvas.EmbedFonts) to get the old behaviour.
+You can use [vgpdf.Canvas.EmbedFonts](https://pkg.go.dev/gonum.org/v1/plot/vg/vgpdf#Canvas.EmbedFonts) to get the old behaviour.
 
 ## rootio
 
-This release adds preliminary support for chaining multiple `rootio.Tree`s into a logical view: the famed [rootio.Chain](https://godoc.org/go-hep.org/x/hep/rootio#Chain).
+This release adds preliminary support for chaining multiple `rootio.Tree`s into a logical view: the famed [rootio.Chain](https://pkg.go.dev/go-hep.org/x/hep/rootio#Chain).
 
 [Mohamed Amine El Gnaoui (a.k.a @maloft)](https://github.com/maloft), our new summer student [@LPC-Clermont](http://clrwww.in2p3.fr), provided the initial implementation: thanks!
 More tests and benchmarks improvements yet to come :)

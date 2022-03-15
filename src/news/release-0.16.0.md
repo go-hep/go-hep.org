@@ -63,7 +63,7 @@ Here is a quick and dirty Rosetta code for migrating to `groot`:
 The plot creation and the ROOT file interaction parts have been refactored into a new package [go-hep.org/x/hep/groot/rsrv](https://go-hep.org/x/hep/groot/rsrv) that contains a couple of HTTP end-points that can be reused in third-party packages or applications.
 
 `rsrv` exposes a REST API that expects JSON requests (`OpenFileRequest`, `PlotH1Request`, `PlotTreeRequest`, ...) and returns JSON responses.
-The HTTP end-points are attached to the [rsrv.Server](https://godoc.org/go-hep.org/x/hep/groot/rsrv#Server) type.
+The HTTP end-points are attached to the [rsrv.Server](https://pkg.go.dev/go-hep.org/x/hep/groot/rsrv#Server) type.
 
 `root-srv` can now open ROOT files served over `xrootd`.
 

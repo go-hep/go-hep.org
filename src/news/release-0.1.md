@@ -31,8 +31,8 @@ Support of [ROOT](https://root.cern.ch) files and reading their content dramatic
 - read `TGraph`, `TGraphErrors` and `TGraphAsymmErrors`
 - read (flat) `TTrees`
 - scan/iterate/select content of `TTrees`
-- improved the [root-ls](https://godoc.org/go-hep.org/x/hep/rootio/cmd/root-ls) command display
-- introduction of [root-srv](https://godoc.org/go-hep.org/x/hep/rootio/cmd/root-srv), a command to browse `ROOT` files' content.
+- improved the [root-ls](https://pkg.go.dev/go-hep.org/x/hep/rootio/cmd/root-ls) command display
+- introduction of [root-srv](https://pkg.go.dev/go-hep.org/x/hep/rootio/cmd/root-srv), a command to browse `ROOT` files' content.
   One can also plot `TH1x`, `TH2x`, `TGraph{,{,Asymm}Errors}` and (flat) `TTrees`.
 - `root-srv` is also served on [Google AppEngine](https://cloud.google.com/appengine/):  [`rootio-inspector.appspot.com`](http://rootio-inspector.appspot.com). This allows to inspect `ROOT` files without having `ROOT` nor `Go-HEP` installed.
 
@@ -43,9 +43,9 @@ Support of [ROOT](https://root.cern.ch) files and reading their content dramatic
 [go-hep/hbook](https://go-hep.org/x/hep/hbook) gained inter-operability with [YODA](https://yoda.hepforge.org/) (Yet more Objects for Data Analysis).
 `hbook` can now save `hbook.H1D`, `hbook.H2D`, ... into `YODA` ASCII files and load `hbook.H1D`, ... from `YODA` ASCII files.
 
-Two new commands, [yoda2rio](https://godoc.org/go-hep.org/x/hep/cmd/yoda2rio) and [rio2yoda](https://godoc.org/go-hep.org/x/hep/cmd/rio2yoda), were also introduced to allow converting `YODA` files to [rio](https://godoc.org/go-hep.org/x/hep/rio) ones, and back.
+Two new commands, [yoda2rio](https://pkg.go.dev/go-hep.org/x/hep/cmd/yoda2rio) and [rio2yoda](https://pkg.go.dev/go-hep.org/x/hep/cmd/rio2yoda), were also introduced to allow converting `YODA` files to [rio](https://pkg.go.dev/go-hep.org/x/hep/rio) ones, and back.
 
-This allowed to create a new command: [`fads-rivet-mc-generic`](https://godoc.org/go-hep.org/x/hep/fads/cmd/fads-rivet-mc-generic).
+This allowed to create a new command: [`fads-rivet-mc-generic`](https://pkg.go.dev/go-hep.org/x/hep/fads/cmd/fads-rivet-mc-generic).
 This command reproduces the default MonteCarlo analysis from [Rivet](https://rivet.hepforge.org): [MC_GENERIC.cc](https://rivet.hepforge.org/trac/browser/src/Analyses/MC_GENERIC.cc).
 It was nice to see the results were the same :) (except that `fads` was twice faster.)
 

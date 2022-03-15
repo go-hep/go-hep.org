@@ -8,7 +8,7 @@ weight: 10
 
 Release [`v0.13.0`](https://github.com/go-hep/hep/tree/v0.13.0) is fresh from the oven.
 
-This release ships with major improvements in the [xrootd](https://godoc.org/go-hep.org/x/hep/xrootd) implementation and a few fixes in `rootio`.
+This release ships with major improvements in the [xrootd](https://pkg.go.dev/go-hep.org/x/hep/xrootd) implementation and a few fixes in `rootio`.
 
 ## rootio
 
@@ -118,6 +118,6 @@ Options:
     -l	use a long listing format
 ```
 
-- a convenience `xrootd/xrdfs.FileSystem` interface has been introduced to model interacting with the remote `xrootd` server's filesystem, following the [os](https://godoc.org/os) package API
-- a convenience `xrootd/xrdfs.File` interface has been introduced to model interacting with the remote `xrootd` file, following the [os.File](https://godoc.org/os#File) API
+- a convenience `xrootd/xrdfs.FileSystem` interface has been introduced to model interacting with the remote `xrootd` server's filesystem, following the [os](https://pkg.go.dev/os) package API
+- a convenience `xrootd/xrdfs.File` interface has been introduced to model interacting with the remote `xrootd` file, following the [os.File](https://pkg.go.dev/os#File) API
 - a convenience `xrootd/xrdio.File` type, implementing various `io.Xyz` interfaces has been introduced as well.

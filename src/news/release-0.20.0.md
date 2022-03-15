@@ -9,9 +9,9 @@ Release [`v0.20.0`](https://github.com/go-hep/hep/tree/v0.20.0) is fresh from th
 
 This release contains a major new `groot` feature: the ability to *write* (simple, flat) trees:
 
-- [groot/rtree#NewWriter](https://godoc.org/go-hep.org/x/hep/groot/rtree#NewWriter)
+- [groot/rtree#NewWriter](https://pkg.go.dev/go-hep.org/x/hep/groot/rtree#NewWriter)
 
-and a couple of new features for [hplot](https://godoc.org/go-hep.org/x/hep/hplot).
+and a couple of new features for [hplot](https://pkg.go.dev/go-hep.org/x/hep/hplot).
 
 ## groot
 
@@ -71,7 +71,7 @@ if err != nil {
 
 - support for writing simple flat trees of builtins and arrays of builtins (no slices, yet) has been added:
 
-[godoc:example](https://godoc.org/go-hep.org/x/hep/groot/rtree#example-package--CreateFlatNtuple)
+[godoc:example](https://pkg.go.dev/go-hep.org/x/hep/groot/rtree#example-package--CreateFlatNtuple)
 ```go
 type Data struct {
 	I32    int32
@@ -147,9 +147,9 @@ if err != nil {
 
 ## hplot
 
-- [hplot.VLine](https://godoc.org/go-hep.org/x/hep/hplot#VLine) has been added to easily create a vertical line on a plot
-- [hplot.HLine](https://godoc.org/go-hep.org/x/hep/hplot#HLine) has been added to easily create a horitzontal line on a plot
-- [hplot.NewBand](https://godoc.org/go-hep.org/x/hep/hplot#NewBand) has been added to easily create a band between two sets of data points on a plot
+- [hplot.VLine](https://pkg.go.dev/go-hep.org/x/hep/hplot#VLine) has been added to easily create a vertical line on a plot
+- [hplot.HLine](https://pkg.go.dev/go-hep.org/x/hep/hplot#HLine) has been added to easily create a horitzontal line on a plot
+- [hplot.NewBand](https://pkg.go.dev/go-hep.org/x/hep/hplot#NewBand) has been added to easily create a band between two sets of data points on a plot
 
 ![vline-example](https://github.com/go-hep/hep/raw/v0.20.0/hplot/testdata/vline_golden.png)
 ![hline-example](https://github.com/go-hep/hep/raw/v0.20.0/hplot/testdata/hline_golden.png)

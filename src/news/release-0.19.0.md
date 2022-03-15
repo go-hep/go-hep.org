@@ -10,13 +10,13 @@ Release [`v0.19.0`](https://github.com/go-hep/hep/tree/v0.19.0) is fresh from th
 
 This release contains 3 new `groot`-related packages:
 
-- [groot/rsql/rsqldrv](https://godoc.org/go-hep.org/x/hep/groot/rsql/rsqldrv): a package to present a ROOT File+Tree as a SQL database, by way of implementing the `database/sql/driver` interface for `groot`
-- [groot/rsql](https://godoc.org/go-hep.org/x/hep/groot/rsql): a convenience package to scan (a la `TTree::Scan` and `TTree::Draw`) `rtree.Tree` and create `hbook.H1D` or `hbook.H2D`
-- [groot/rarrow](https://godoc.org/go-hep.org/x/hep/groot/rarrow): a package to present `rtree.Tree` as [Apache Arrow's](https://arrow.apache.org) Tables and Records. This will be very useful for interoperability with DataScience and/or Machine Learning toolkits.
+- [groot/rsql/rsqldrv](https://pkg.go.dev/go-hep.org/x/hep/groot/rsql/rsqldrv): a package to present a ROOT File+Tree as a SQL database, by way of implementing the `database/sql/driver` interface for `groot`
+- [groot/rsql](https://pkg.go.dev/go-hep.org/x/hep/groot/rsql): a convenience package to scan (a la `TTree::Scan` and `TTree::Draw`) `rtree.Tree` and create `hbook.H1D` or `hbook.H2D`
+- [groot/rarrow](https://pkg.go.dev/go-hep.org/x/hep/groot/rarrow): a package to present `rtree.Tree` as [Apache Arrow's](https://arrow.apache.org) Tables and Records. This will be very useful for interoperability with DataScience and/or Machine Learning toolkits.
 
 ## groot
 
-Providing `groot/rarrow` made a new command possible - [cmd/root2arrow](https://godoc.org/go-hep.org/x/hep/cmd/root2arrow) - that can convert a ROOT TTree stored in a ROOT file, into a sequence of Arrow records, stored into an Arrow file (or Arrow stream.)
+Providing `groot/rarrow` made a new command possible - [cmd/root2arrow](https://pkg.go.dev/go-hep.org/x/hep/cmd/root2arrow) - that can convert a ROOT TTree stored in a ROOT file, into a sequence of Arrow records, stored into an Arrow file (or Arrow stream.)
 
 ```
 $> go doc go-hep.org/x/hep/cmd/root2arrow

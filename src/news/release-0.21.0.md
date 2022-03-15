@@ -9,20 +9,20 @@ Release [`v0.21.0`](https://github.com/go-hep/hep/tree/v0.21.0) is fresh from th
 
 This release contains a major new `groot` feature: the ability to *write* (simple, flat) trees, including variable-length arrays (_a.k.a_ slices):
 
-- [groot/rtree--CreateFlatNtuple](https://godoc.org/go-hep.org/x/hep/groot/rtree#example-package--CreateFlatNtuple)
-- [groot/rtree--CreateFlatFromStruct](https://godoc.org/go-hep.org/x/hep/groot/rtree#example-package--CreateFlatNtupleFromStruct)
-- [groot/rtree--CreateFlatNtupleWithLZMA](https://godoc.org/go-hep.org/x/hep/groot/rtree#example-package--CreateFlatNtupleWithLZMA)
+- [groot/rtree--CreateFlatNtuple](https://pkg.go.dev/go-hep.org/x/hep/groot/rtree#example-package--CreateFlatNtuple)
+- [groot/rtree--CreateFlatFromStruct](https://pkg.go.dev/go-hep.org/x/hep/groot/rtree#example-package--CreateFlatNtupleFromStruct)
+- [groot/rtree--CreateFlatNtupleWithLZMA](https://pkg.go.dev/go-hep.org/x/hep/groot/rtree#example-package--CreateFlatNtupleWithLZMA)
 
 ## groot
 
 - `groot` supports more ROOT-4 files (as created by Geant4: `TH{1,2}x` and `TTree`)
 - fixed compilation on 32b systems
-- add [groot/rtree.WriterVarsFromStruct](https://godoc.org/go-hep.org/x/hep/groot/rtree#WriteVarsFromStruct) to generate a slice of `rtree.WriterVars` from a user-provided `struct` that can be then used to fill a tree
+- add [groot/rtree.WriterVarsFromStruct](https://pkg.go.dev/go-hep.org/x/hep/groot/rtree#WriteVarsFromStruct) to generate a slice of `rtree.WriterVars` from a user-provided `struct` that can be then used to fill a tree
 - add `With{LZ4,LZMA,Zlib}` and `WithoutCompression` functions to configure whether a tree should use compression (and what kind of compression, if any)
 - add `WithBasketSize` to configure the basket size of trees/branches
 - add auto-flushing of branches' baskets
 
-[godoc:example](https://godoc.org/go-hep.org/x/hep/groot/rtree#example-package--CreateFlatNtupleFromStruct)
+[godoc:example](https://pkg.go.dev/go-hep.org/x/hep/groot/rtree#example-package--CreateFlatNtupleFromStruct)
 ```go
 type Data struct {
     I32    int32
@@ -99,9 +99,9 @@ if err != nil {
 
 ## hplot
 
-- [hplot.Function](https://godoc.org/go-hep.org/x/hep/hplot#Function) has been copied from [Gonum/plot](https://godoc.org/gonum.org/v1/plot/plotter#Function) with extra support for log-y axes (automatically discarding intervals where the returned value is invalid on log-y axes)
+- [hplot.Function](https://pkg.go.dev/go-hep.org/x/hep/hplot#Function) has been copied from [Gonum/plot](https://pkg.go.dev/gonum.org/v1/plot/plotter#Function) with extra support for log-y axes (automatically discarding intervals where the returned value is invalid on log-y axes)
 
-[godoc:example](https://godoc.org/go-hep.org/x/hep/hplot#example-Function--LogY)
+[godoc:example](https://pkg.go.dev/go-hep.org/x/hep/hplot#example-Function--LogY)
 ```go
 quad := hplot.NewFunction(func(x float64) float64 { return x * x })
 quad.Color = color.RGBA{B: 255, A: 255}
@@ -153,7 +153,7 @@ if err != nil {
 
 ## clean-up
 
-The whole GoHEP tree has been cleaned up to remove the use of [github.com/pkg/errors](https://godoc.org/github.com/pkg/errors) and use instead [x/xerrors](https://godoc.org/golang.org/x/xerrors).
+The whole GoHEP tree has been cleaned up to remove the use of [github.com/pkg/errors](https://pkg.go.dev/github.com/pkg/errors) and use instead [x/xerrors](https://pkg.go.dev/golang.org/x/xerrors).
 `x/xerrors` will be phased out (in favor of `fmt` from the stdlib) when Go-1.13 will be the oldest supported release.
 
 This is to gain nice error reports as documented in the [Go blog](https://blog.golang.org):
