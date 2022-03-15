@@ -5,7 +5,7 @@ weight = 5
 tags = ["sphinx", "documentation"]
 +++
 
-[![GoDoc](https://pkg.go.dev/go-hep.org/x/hep?status.svg)](https://pkg.go.dev/go-hep.org/x/hep)
+[![go.dev reference](https://img.shields.io/badge/go.dev-reference-007d9c?logo=go&logoColor=white&style=flat)](https://pkg.go.dev/go-hep.org/x/hep)
 
 Like for all [Go](https://golang.org/) packages, `go-hep`'s documentation is served by [pkg.go.dev](https://pkg.go.dev/go-hep.org/x/hep).
 
