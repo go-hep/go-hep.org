@@ -4,7 +4,7 @@ date: 2023-09-08T12:00:00+01:00
 weight: 10
 ---
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7928500.svg)](https://doi.org/10.5281/zenodo.7928500)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8329416.svg)](https://doi.org/10.5281/zenodo.8329416)
 
 Release [`v0.34.0`](https://github.com/go-hep/hep/tree/v0.34.0) is out of the oven.
 
