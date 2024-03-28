@@ -25,7 +25,6 @@ pygmentsCodeFences = true
 	name = "Go-HEP"
 
 	description = "Writing HEP software with ease and Go"
-	twitter = "https://twitter.com/go_hep"
 	github = "https://github.com/go-hep"
 
 	custom_css = []
@@ -104,9 +103,8 @@ pygmentsCodeFences = true
 	weight = 9
 
 [social]
-	twitter = "go_hep"
 	github  = "go-hep"
-	email   = "go-hep@googlegroups.com"
+	email   = "~sbinet/go-hep@lists.sr.ht"
 
 [blackfriday]
 	smartypants	= true
