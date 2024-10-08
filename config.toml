@@ -46,6 +46,10 @@ pygmentsCodeFences = true
     	text = "Ubuntu"
     	code = "Ubuntu Mono"
 
+    [params.social]
+    	github  = "go-hep"
+    	email   = "~sbinet/go-hep@lists.sr.ht"
+
 [author]
 	name = "The go-hep authors"
 
@@ -101,10 +105,6 @@ pygmentsCodeFences = true
 	name   = "License"
 	url    = "license/"
 	weight = 9
-
-[social]
-	github  = "go-hep"
-	email   = "~sbinet/go-hep@lists.sr.ht"
 
 [blackfriday]
 	smartypants	= true
