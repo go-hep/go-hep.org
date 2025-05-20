@@ -22,7 +22,7 @@ We _may_ reintroduce `pawgo` and `iplot` some time in the future, perhaps based 
 
 ## fit
 
-- add `Poly` to fit polynomials
+- add [`Poly`](https://pkg.go.dev/go-hep.org/x/hep@v0.37.0/fit#Poly) to fit polynomials
 - add `Func1D.Hessian` to (numerically) compute the Hessian matrix at a given point in the parameter space
 
 ## groot
