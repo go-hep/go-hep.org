@@ -32,8 +32,8 @@ func main() {
 
 	srv := remote{server}
 	srv.run("systemctl", "stop", service)
-	run("scp", "./go-hep-serve", server+":"+remoteDir+"/.")
-	srv.run("setcap", "cap_net_bind_service=+ep", remoteDir+"/go-hep-serve")
+	run("scp", "./go-hep-serve", server+":/usr/bin/.")
+	srv.run("setcap", "cap_net_bind_service=+ep", "/usr/bin/go-hep-serve")
 	srv.run("cd " + remoteDir + " && git pull")
 	srv.run("systemctl", "restart", service)
 	os.Remove("go-hep-serve")
