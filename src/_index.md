@@ -9,16 +9,14 @@ tags = ["sphinx","documentation"]
 
 `Go-HEP` is a set of libraries and applications allowing physicists from High Energy Physics (HEP) to write efficient analysis code in the [Go](https://golang.org) programming language.
 
-
-[![GitHub release](https://img.shields.io/github/release/go-hep/hep.svg)](https://github.com/go-hep/hep/releases)
+[![Release](https://img.shields.io/gitea/v/release/go-hep/hep?gitea_url=https%3A%2F%2Fcodeberg.org&display_name=tag)](https://codeberg.org/go-hep/hep/releases)
 [![go.dev reference](https://pkg.go.dev/badge/go-hep.org/x/hep)](https://pkg.go.dev/go-hep.org/x/hep)
-[![CI](https://github.com/go-hep/hep/workflows/CI/badge.svg)](https://github.com/go-hep/hep/actions)
+[![CI](https://ci.codeberg.org/api/badges/14299/status.svg)](https://ci.codeberg.org/repos/14299)
 [![codecov](https://codecov.io/gh/go-hep/hep/branch/main/graph/badge.svg)](https://codecov.io/gh/go-hep/hep)
 [![Go Report Card](https://goreportcard.com/badge/go-hep.org/x/hep)](https://goreportcard.com/report/go-hep.org/x/hep)
 [![License](https://img.shields.io/badge/License-BSD--3-blue.svg)](https://go-hep.org/license)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.597940.svg)](https://doi.org/10.5281/zenodo.597940)
-[![JOSS Paper](/images/joss-badge.svg)](https://doi.org/10.21105/joss.00372)
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/go-hep/binder/master)
+[![JOSS Paper](http://joss.theoj.org/papers/0b007c81073186f7c61f95ea26ad7971/status.svg)](http://joss.theoj.org/papers/0b007c81073186f7c61f95ea26ad7971)
 
 [Go](https://golang.org) brings the fast edit-compile-run cycle that interpreted language users enjoy and the runtime efficiency that compiled languages users expect.
 [Go-HEP](https://go-hep.org) provides the needed `HEP` oriented packages on top of this concurrency-enabled language.
@@ -79,8 +77,8 @@ All `go-hep` code is released under a [BSD-3 license](/license).
 
 ## Authors and Contributors
 
-``go-hep`` was primarily written by Sebastien Binet ([@sbinet](https://github.com/sbinet)).
-The complete [CONTRIBUTORS](https://github.com/go-hep/license/blob/master/CONTRIBUTORS) and [AUTHORS](https://github.com/go-hep/license/blob/master/AUTHORS) list can be consulted on the dedicated [license](https://github.com/go-hep/license) repository.
+``go-hep`` was primarily written by Sebastien Binet ([@sbinet](https://codeberg.org/sbinet)).
+The complete [CONTRIBUTORS](https://codeberg.org/go-hep/license/src/branch/main/CONTRIBUTORS) and [AUTHORS](https://codeberg.org/go-hep/license/src/branch/main/AUTHORS) list can be consulted on the dedicated [license](https://codeberg.org/go-hep/license) repository.
 
 ## Support or Contact
 

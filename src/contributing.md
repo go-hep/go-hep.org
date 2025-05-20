@@ -38,9 +38,9 @@ As a rule, we keep all tests OK and try to increase code coverage.
 ### Your First Code Contribution
 
 If you are a new contributor, *thank you!*
-Before your first merge, you will need to be added to the [CONTRIBUTORS](https://github.com/go-hep/license/blob/master/CONTRIBUTORS) and [AUTHORS](https://github.com/go-hep/license/blob/master/AUTHORS) files.
+Before your first merge, you will need to be added to the [CONTRIBUTORS](https://codeberg.org/go-hep/license/src/tree/main/CONTRIBUTORS) and [AUTHORS](https://codeberg.org/go-hep/license/src/tree/main/AUTHORS) files.
 Open a pull request adding yourself to these files.
-All `go-hep` code follows the BSD license in the [license document](https://github.com/go-hep/license/blob/master/LICENSE).
+All `go-hep` code follows the BSD license in the [license document](https://codeberg.org/go-hep/license/src/tree/main/LICENSE).
 We prefer that code contributions do not come with additional licensing.
 For exceptions, added code must also follow a BSD license.
 
@@ -88,7 +88,7 @@ Please always format your code with [goimports](https://pkg.go.dev/golang.org/x/
 Best is to have it invoked as a hook when you save your `.go` files.
 
 Files in the `go-hep` repository don't list author names, both to avoid clutter and to avoid having to keep the lists up to date.
-Instead, your name will appear in the change log and in the [CONTRIBUTORS](https://github.com/go-hep/license/blob/master/CONTRIBUTORS) and [AUTHORS](https://github.com/go-hep/license/blob/master/AUTHORS) files.
+Instead, your name will appear in the change log and in the [CONTRIBUTORS](https://codeberg.org/go-hep/license/src/tree/main/CONTRIBUTORS) and [AUTHORS](https://codeberg.org/go-hep/license/src/tree/main/AUTHORS) files.
 
 New files that you contribute should use the standard copyright header:
 
@@ -125,7 +125,7 @@ Also note that you do not have to be the pull request submitter to request addit
 
 If you are looking for some way to help the `go-hep` project, there are good places to start, depending on what you are comfortable with.
 
-- You can [search](https://github.com/issues?utf8=%E2%9C%93&q=is%3Aopen+is%3Aissue+user%3Ago-hep) for open issues in need of resolution.
+- You can [search](https://codeberg.org/go-hep/hep/issues) for open issues in need of resolution.
 - You can improve documentation, or improve examples.
 - You can add and improve tests.
 - You can improve performance, either by improving accuracy, speed, or both.

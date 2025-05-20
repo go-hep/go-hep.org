@@ -5,7 +5,7 @@ weight: 8
 ---
 
 This page tries to gather users of [Go-HEP](https://go-hep.org), papers and talks about Go-HEP and/or uses of [Go](https://golang.org) in science and HENP in particular.
-Feel free to send pull requests [here](https://github.com/go-hep/go-hep.org) to complete this list.
+Feel free to send pull requests [here](https://codeberg.org/go-hep/go-hep.org) to complete this list.
 
 ## Go Research papers
 

@@ -181,8 +181,8 @@ var goGetHepTemplate = template.Must(template.New("x/hep").Parse(`<!DOCTYPE html
 <html>
 <head>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
- <meta name="go-import" content="go-hep.org/x/{{.Repo}} git https://github.com/go-hep/{{.Repo}}"/>
- <meta name="go-source" content="go-hep.org/x/{{.Repo}} https://github.com/go-hep/{{.Repo}}/ https://github.com/go-hep/{{.Repo}}/tree/main{/dir} https://github.com/go-hep/{{.Repo}}/blob/main{/dir}/{file}#L{line}"/>
+ <meta name="go-import" content="go-hep.org/x/{{.Repo}} git https://codeberg.org/go-hep/{{.Repo}}"/>
+ <meta name="go-source" content="go-hep.org/x/{{.Repo}} https://codeberg.org/go-hep/{{.Repo}}/ https://codeberg.org/go-hep/{{.Repo}}/src/branch/main{/dir} https://codeberg.org/go-hep/{{.Repo}}/src/branch/main{/dir}/{file}#L{line}"/>
  <meta http-equiv="refresh" content="0; url=https://pkg.go.dev/go-hep.org/x/{{.Pkg}}"/>
 </head>
 <body>
@@ -195,8 +195,8 @@ var goGetExpTemplate = template.Must(template.New("x/exp").Parse(`<!DOCTYPE html
 <html>
 <head>
  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
- <meta name="go-import" content="go-hep.org/x/{{.Repo}} git https://github.com/go-hep/{{.Repo}}"/>
- <meta name="go-source" content="go-hep.org/x/{{.Repo}} https://github.com/go-hep/{{.Repo}}/ https://github.com/go-hep/{{.Repo}}/tree/main{/dir} https://github.com/go-hep/{{.Repo}}/blob/main{/dir}/{file}#L{line}"/>
+ <meta name="go-import" content="go-hep.org/x/{{.Repo}} git https://codeberg.org/go-hep/{{.Repo}}"/>
+ <meta name="go-source" content="go-hep.org/x/{{.Repo}} https://codeberg.org/go-hep/{{.Repo}}/ https://codeberg.org/go-hep/{{.Repo}}/src/branch/main{/dir} https://codeberg.org/go-hep/{{.Repo}}/src/branch/main{/dir}/{file}#L{line}"/>
  <meta http-equiv="refresh" content="0; url=https://pkg.go.dev/go-hep.org/x/{{.Pkg}}"/>
 </head>
 <body>
@@ -209,8 +209,8 @@ var goGetCgoTemplate = template.Must(template.New("x/cgo").Parse(`<!DOCTYPE html
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-  <meta name="go-import" content="go-hep.org/x/cgo/{{.Repo}} git https://github.com/go-hep/{{.Repo}}"/>
-  <meta name="go-source" content="go-hep.org/x/cgo/{{.Repo}} https://github.com/go-hep/{{.Repo}}/ https://github.com/go-hep/{{.Repo}}/tree/main{/dir} https://github.com/go-hep/{{.Repo}}/blob/main{/dir}/{file}#L{line}"/>
+  <meta name="go-import" content="go-hep.org/x/cgo/{{.Repo}} git https://codeberg.org/go-hep/{{.Repo}}"/>
+  <meta name="go-source" content="go-hep.org/x/cgo/{{.Repo}} https://codeberg.org/go-hep/{{.Repo}}/ https://codeberg.org/go-hep/{{.Repo}}/src/branch/main{/dir} https://codeberg.org/go-hep/{{.Repo}}/src/branch/main{/dir}/{file}#L{line}"/>
   <meta http-equiv="refresh" content="0; url=https://pkg.go.dev/go-hep.org/x/cgo/{{.Pkg}}"/>
 </head>
 <body>
@@ -223,10 +223,10 @@ var commitTemplate = template.Must(template.New("commit").Parse(`<!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
-  <meta http-equiv="refresh" content="0; url=https://github.com/go-hep/{{.Repo}}/commit/{{.Commit}}"/>
+  <meta http-equiv="refresh" content="0; url=https://codeberg.org/go-hep/{{.Repo}}/commit/{{.Commit}}"/>
 </head>
 <body>
-Nothing to see here; <a href="https://github.com/go-hep/{{.Repo}}/commit/{{.Commit}}">move along</a>.
+Nothing to see here; <a href="https://codeberg.org/go-hep/{{.Repo}}/commit/{{.Commit}}">move along</a>.
 </body>
 </html>
 `))

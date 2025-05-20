@@ -5,7 +5,7 @@ weight = 4
 +++
 
 Tutorials are important.
-For the moment, they are mostly available on [github](https://github.com/go-hep/tutos).
+For the moment, they are mostly available on [Codeberg](https://codeberg.org/go-hep/tutos).
 
 There, you'll find:
 

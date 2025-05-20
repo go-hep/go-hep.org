@@ -7,7 +7,7 @@ This is the repository holding the sources for the [go-hep.org](https://go-hep.o
 To add new content to the `news` section:
 
 ```
-git clone https://github.com/go-hep/go-hep.org
+git clone https://codeberg.org/go-hep/go-hep.org
 cd go-hep.org
 hugo new "news/a-new-entry.md"
 $EDITOR ./src/news/a-new-entry.md
@@ -24,7 +24,7 @@ open http://localhost:8080
 ## Pushing your changes
 
 ```
-git checkout -b my-branch origin/master
+git checkout -b my-branch origin/main
 git add -p
 git commit -m "content: bla bla"
 git push my-branch

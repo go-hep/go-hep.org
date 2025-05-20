@@ -5,7 +5,7 @@ title = "go-hep"
 copyright = "go-hep"
 
 license = "BSD"
-licenselink = "https://github.com/go-hep/license/blob/master/LICENSE.md"
+licenselink = "https://codeberg.org/go-hep/hep/src/branch/main/LICENSE"
 homepage = "https://go-hep.org"
 
 theme = "hugo-material-docs"
@@ -25,7 +25,7 @@ pygmentsCodeFences = true
 	name = "Go-HEP"
 
 	description = "Writing HEP software with ease and Go"
-	github = "https://github.com/go-hep"
+	codeberg = "https://codeberg.org/go-hep"
 
 	custom_css = []
 	custom_js  = []
@@ -47,8 +47,8 @@ pygmentsCodeFences = true
     	code = "Ubuntu Mono"
 
     [params.social]
-    	github  = "go-hep"
-    	email   = "~sbinet/go-hep@lists.sr.ht"
+    	codeberg = "go-hep/hep"
+    	email    = "~sbinet/go-hep@lists.sr.ht"
 
 [author]
 	name = "The go-hep authors"
